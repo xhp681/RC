@@ -1,8 +1,10 @@
 ﻿@page "/"
 @namespace Rs.Web.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Rs.Config;
 @{
     Layout = null;
+    SiteConfig config = Extension.ReadConfigFile<SiteConfig>(Extension.SiteConfigFile);
 }
 
 <!DOCTYPE html>
@@ -10,7 +12,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rs.Web</title>
+    <title>@config.SiteName</title>
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />

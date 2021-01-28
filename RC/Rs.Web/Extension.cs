@@ -20,12 +20,16 @@ namespace Rs.Web
         /// </summary>
         private static string ConfitDir = Utils.ContentRootMapPath("Config");
         /// <summary>
+        /// 系统配置文件名称
+        /// </summary>
+        public static string SiteConfigFile = "site.json";
+        /// <summary>
         /// 读取相应的配置文件
         /// </summary>
         /// <typeparam name="T">配置文件对象</typeparam>
         /// <param name="jsonfilename">JSON文件名称</param>
         /// <returns></returns>
-        public static T ReadConfigFile<T>(string jsonfilename = "Rs.json")where T:BaseConfig,new()
+        public static T ReadConfigFile<T>(string jsonfilename = "rs.json")where T:BaseConfig,new()
         {
             if (!Directory.Exists(ConfitDir))
                 Directory.CreateDirectory(ConfitDir);
@@ -44,7 +48,7 @@ namespace Rs.Web
         /// <typeparam name="T">被保存对象</typeparam>
         /// <param name="Path">文件保存路径</param>
         /// <param name="jsonfilename">JSON文件名称</param>
-        public static void SaveConfigFile<T>(T obj, string jsonfilename = "Rs.json") where T : BaseConfig, new()
+        public static void SaveConfigFile<T>(T obj, string jsonfilename = "rs.json") where T : BaseConfig, new()
         {
             T t =obj==null?new T():obj;
             if (!Directory.Exists(ConfitDir))
