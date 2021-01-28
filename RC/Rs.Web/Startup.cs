@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rs.Config;
 using Rs.Web.Data;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace Rs.Web
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            RsConfig rsConfig = Extension.ReadConfigFile<RsConfig>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
