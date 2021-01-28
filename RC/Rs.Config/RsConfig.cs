@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Rs.Config
 {
+    [Serializable]
     /// <summary>
     /// 系统配置对象
     /// </summary>
     public sealed class RsConfig:BaseConfig
     {
+        /// <summary>
+        /// 加密字符串
+        /// </summary>
+        public string Encrpy { get; set; }
         /// <summary>
         /// 系统路径
         /// </summary>

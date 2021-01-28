@@ -30,7 +30,9 @@ namespace Rs.Web
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-            RsConfig rsConfig = Extension.ReadConfigFile<RsConfig>();
+            //DbConfig obj = new DbConfig() { Host = "172.16.9.110", Port = "1433", Name = "RCDB", UserName = "xhp@5201314", PassWord = "jfkdlajfdkafda" };
+            //Extension.SaveConfigFile<DbConfig>(obj, "db.json");
+            //DbConfig rsConfig=Extension.ReadConfigFile<DbConfig>("db.json");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

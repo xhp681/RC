@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rs.Config
 {
+    [Serializable]
     /// <summary>
     /// 系统配置
     /// </summary>
