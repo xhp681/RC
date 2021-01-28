@@ -1,0 +1,15 @@
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\Rs.Config.deps.json
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\Rs.Config.dll
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\ref\Rs.Config.dll
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\Rs.Config.pdb
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\Rs.Common.dll
+D:\RC\RC\Rs.Config\bin\Debug\net5.0\Rs.Common.pdb
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.csprojAssemblyReference.cache
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.GeneratedMSBuildEditorConfig.editorconfig
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.AssemblyInfoInputs.cache
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.AssemblyInfo.cs
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.csproj.CoreCompileInputs.cache
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.csproj.CopyComplete
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.dll
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\ref\Rs.Config.dll
+D:\RC\RC\Rs.Config\obj\Debug\net5.0\Rs.Config.pdb

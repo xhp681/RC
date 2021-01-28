@@ -1,0 +1,17 @@
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.DataBase.deps.json
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.DataBase.dll
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\ref\Rs.DataBase.dll
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.DataBase.pdb
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.Common.dll
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.Config.dll
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.Common.pdb
+D:\RC\RC\Rs.DataBase\bin\Debug\net5.0\Rs.Config.pdb
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.csprojAssemblyReference.cache
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.AssemblyInfoInputs.cache
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.AssemblyInfo.cs
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.csproj.CoreCompileInputs.cache
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.csproj.CopyComplete
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.dll
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\ref\Rs.DataBase.dll
+D:\RC\RC\Rs.DataBase\obj\Debug\net5.0\Rs.DataBase.pdb

@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Rs.DataBase/1.0.0": {
+        "dependencies": {
+          "Rs.Common": "1.0.0",
+          "Rs.Config": "1.0.0"
+        },
+        "runtime": {
+          "Rs.DataBase.dll": {}
+        }
+      },
+      "Rs.Common/1.0.0": {
+        "runtime": {
+          "Rs.Common.dll": {}
+        }
+      },
+      "Rs.Config/1.0.0": {
+        "dependencies": {
+          "Rs.Common": "1.0.0"
+        },
+        "runtime": {
+          "Rs.Config.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rs.DataBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rs.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rs.Config/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
