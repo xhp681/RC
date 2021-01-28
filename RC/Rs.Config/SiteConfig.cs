@@ -16,5 +16,9 @@ namespace Rs.Config
         /// 系统名称
         /// </summary>
         public string SiteName { get; set; } = "川渝人才网";
+        /// <summary>
+        /// 系统域名
+        /// </summary>
+        public string Http { get; set; }
     }
 }
