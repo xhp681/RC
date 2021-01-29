@@ -85,7 +85,7 @@ using Rs.Web.Shared;
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
-            __builder.AddMarkupContent(0, "<h1>Hello, world!</h1>\r\n\r\nWelcome to your new app.\r\n\r\n");
+            __builder.AddMarkupContent(0, "<h1 b-b9kgfyesnj>Hello, world!</h1>\r\n\r\nWelcome to your new app.\r\n\r\n");
             __builder.OpenComponent<Rs.Web.Shared.SurveyPrompt>(1);
             __builder.AddAttribute(2, "Title", "How is Blazor working for you?");
             __builder.CloseComponent();

@@ -60,7 +60,7 @@ namespace Rs.Web
                 using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
                 {
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                    using (StreamWriter writer = new StreamWriter(fs, Encoding.GetEncoding("UTF-8")))
+                    using (StreamWriter writer = new StreamWriter(fs, Encoding.GetEncoding("utf-8")))
                     {
                         writer.WriteAsync(Content);
                     }

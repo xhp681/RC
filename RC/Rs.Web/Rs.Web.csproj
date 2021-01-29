@@ -5,9 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Rs.Common\Rs.Common.csproj" />
     <ProjectReference Include="..\Rs.Config\Rs.Config.csproj" />
     <ProjectReference Include="..\Rs.DataBase\Rs.DataBase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Razor\" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "Razor/header.css",
+    "inputFile": "Razor/header.scss"
+  },
+  {
+    "outputFile": "Razor/header.razor.css",
+    "inputFile": "Razor/header.razor.scss"
+  },
+  {
+    "outputFile": "Shared/MainLayout.css",
+    "inputFile": "Shared/MainLayout.scss"
+  },
+  {
+    "outputFile": "Shared/MainLayout.razor.css",
+    "inputFile": "Shared/MainLayout.razor.scss"
+  }
+]

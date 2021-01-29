@@ -20,5 +20,13 @@ namespace Rs.Config
         /// 系统域名
         /// </summary>
         public string Http { get; set; }
+        /// <summary>
+        /// 系统SEO优化，关键字
+        /// </summary>
+        public string KeyWords { get; set; }
+        /// <summary>
+        /// 系统SEO优化，描述
+        /// </summary>
+        public string Description { get; set; }
     }
 }

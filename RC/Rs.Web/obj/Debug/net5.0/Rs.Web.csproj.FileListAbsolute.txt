@@ -64,3 +64,4 @@ D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.pdb
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.genruntimeconfig.cache
 D:\RC\RC\Rs.Web\bin\Debug\net5.0\Config\Rs.json
 D:\RC\RC\Rs.Web\bin\Debug\net5.0\dbconfig.json
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\scopedcss\Pages\Index.razor.rz.scp.css

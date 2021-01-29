@@ -2,9 +2,18 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:#646464;
+    font-size:12px;
 }
 
-a, .btn-link {
+a,a:active,a:after {
+    color: #646464;
+}
+a:hover {
+    color: rgb(255,0,0);
+}
+
+.btn-link {
     color: #0366d6;
 }
 
