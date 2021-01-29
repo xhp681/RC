@@ -10,41 +10,37 @@ main[b-b9kgfyesnj] {
     margin: 0 auto;
     width: 1024px;
     text-align: right; }
-    .top-menus .menus-nav .nav-li[b-q7yjeki87c] {
-      margin-top: 10px;
-      padding: 0 8px;
+    .top-menus .menus-nav .nav-li[b-q7yjeki87c], .top-menus .menus-nav .nav-splite[b-q7yjeki87c] {
+      padding: 0 5px;
       float: right;
       width: auto;
-      height: 16px;
-      line-height: 16px;
+      height: 32px;
+      line-height: 32px;
       cursor: pointer; }
-      .top-menus .menus-nav .nav-li a[b-q7yjeki87c] {
+      .top-menus .menus-nav .nav-li a[b-q7yjeki87c], .top-menus .menus-nav .nav-splite a[b-q7yjeki87c] {
         color: red; }
-      .top-menus .menus-nav .nav-li font[b-q7yjeki87c] {
+      .top-menus .menus-nav .nav-li font[b-q7yjeki87c], .top-menus .menus-nav .nav-splite font[b-q7yjeki87c] {
         color: #ff8400; }
-      .top-menus .menus-nav .nav-li .qr-code[b-q7yjeki87c] {
+      .top-menus .menus-nav .nav-li .qr-code[b-q7yjeki87c], .top-menus .menus-nav .nav-splite .qr-code[b-q7yjeki87c] {
         position: relative;
         display: none; }
-        .top-menus .menus-nav .nav-li .qr-code .qr-code-img[b-q7yjeki87c] {
+        .top-menus .menus-nav .nav-li .qr-code .qr-code-img[b-q7yjeki87c], .top-menus .menus-nav .nav-splite .qr-code .qr-code-img[b-q7yjeki87c] {
           position: absolute;
-          right: -20px;
-          width: 312px;
-          height: 120px;
+          left: -6px;
+          width: 135px;
+          height: 135px;
           border: solid 1px #e4e4e4;
           border-top: none;
           z-index: 99;
           overflow: hidden; }
     .top-menus .menus-nav .nav-li:first-child[b-q7yjeki87c] {
-      border-left: solid 1px #dadada; }
+      /*border-left: solid 1px #dadada;*/ }
       .top-menus .menus-nav .nav-li:first-child a[b-q7yjeki87c] {
         color: #646464; }
+      .top-menus .menus-nav .nav-li:first-child a:hover[b-q7yjeki87c] {
+        color: red; }
     .top-menus .menus-nav .nav-li:hover[b-q7yjeki87c] {
       background-color: white; }
-      .top-menus .menus-nav .nav-li:hover font[b-q7yjeki87c] {
-        padding-top: -10px;
-        height: 32px;
-        line-height: 32px;
-        background-color: white; }
       .top-menus .menus-nav .nav-li:hover .qr-code[b-q7yjeki87c] {
         display: block; }
 
