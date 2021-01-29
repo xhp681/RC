@@ -1,5 +1,4 @@
 ﻿.top-menus {
-  /*position: relative;*/
   background-color: #e4e4e4;
   height: 32px; }
   .top-menus .menus-nav {
@@ -29,12 +28,10 @@
           border-top: none;
           z-index: 99;
           overflow: hidden; }
-    .top-menus .menus-nav .nav-li:first-child {
-      /*border-left: solid 1px #dadada;*/ }
-      .top-menus .menus-nav .nav-li:first-child a {
-        color: #646464; }
-      .top-menus .menus-nav .nav-li:first-child a:hover {
-        color: red; }
+    .top-menus .menus-nav .nav-li:first-child a {
+      color: #646464; }
+    .top-menus .menus-nav .nav-li:first-child a:hover {
+      color: red; }
     .top-menus .menus-nav .nav-li:hover {
       background-color: white; }
       .top-menus .menus-nav .nav-li:hover .qr-code {
@@ -42,17 +39,43 @@
 
 .clear-b {
   clear: both;
-  height: 1px; }
-
-.page {
-  position: relative;
-  display: flex;
-  flex-direction: column; }
+  height: 10px; }
 
 .main {
   margin: auto auto;
   /*flex: 1;*/
   width: 1024px; }
+  .main .loger-banner {
+    height: 96px; }
+    .main .loger-banner .loger {
+      float: left;
+      width: 120px;
+      height: 96px;
+      border: solid 1px #e4e4e4; }
+    .main .loger-banner .beian {
+      float: left;
+      width: 54px;
+      height: 54px;
+      border: solid 1px #e4e4e4; }
+    .main .loger-banner .banner {
+      float: right;
+      border: solid 1px #e4e4e4;
+      width: 620px;
+      height: 94px;
+      overflow: hidden;
+      border-radius: 2px; }
+
+.menu-navs {
+  background-color: rgba(255, 0, 0, 0.7);
+  height: 48px; }
+  .menu-navs .menus-nav {
+    margin: 0 auto;
+    width: 1024px; }
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
 
 .sidebar {
   background-image: linear-gradient(180deg, #052767 0%, #3a0647 70%); }

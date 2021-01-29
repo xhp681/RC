@@ -1,17 +1,14 @@
 ﻿$width:1024px;
 $color-s: rgb(255,0,0);
-
+$color-border: #e4e4e4 ;
 
 .top-menus {
-    /*position: relative;*/
-    background-color: #e4e4e4;
+    background-color: $color-border;
     height: 32px;
-
     .menus-nav {
         margin: 0 auto;
         width: $width;
         text-align: right;
-
         .nav-li,.nav-splite {
             padding: 0 5px;
             float: right;
@@ -19,15 +16,12 @@ $color-s: rgb(255,0,0);
             height: 32px;
             line-height: 32px;
             cursor: pointer;
-
             a {
                 color: rgb(255,0,0);
             }
-
             font {
                 color: #ff8400;
             }
-
             .qr-code {
                 position: relative;
                 display: none;
@@ -52,12 +46,9 @@ $color-s: rgb(255,0,0);
             a:hover{
                 color:rgb(255,0,0);
             }
-            /*border-left: solid 1px #dadada;*/
         }
 
         .nav-li:hover {
-            
-            
             background-color: rgb(255,255,255);
             .qr-code {
                 display: block;
@@ -65,23 +56,59 @@ $color-s: rgb(255,0,0);
         }
     }
 }
-
 .clear-b {
     clear: both;
-    height: 1px;
+    height: 10px;
 }
+.main {
+    margin: auto auto;
+    /*flex: 1;*/
+    width: $width;
 
+    .loger-banner {
+        $heigh: 96px;
+        $width-banner: 622px;
+        height: $heigh;
+
+        .loger {
+            float: left;
+            width: 120px;
+            height: $heigh;
+            border: solid 1px $color-border;
+        }
+
+        .beian {
+            float: left;
+            width: 54px;
+            height: 54px;
+            border: solid 1px $color-border;
+        }
+
+        .banner {
+            float: right;
+            border: solid 1px $color-border;
+            width: ($width-banner)-2px;
+            height: ($heigh)-2px;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+    }
+}
+.menu-navs {
+    background-color: rgba(255,0,0,0.7);
+    height: 48px;
+    .menus-nav{
+        margin:0 auto;
+        width:$width;
+    }
+}
 .page {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.main {
-    margin:auto auto;
-    /*flex: 1;*/
-    width:$width;
-}
+
 
 .sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
