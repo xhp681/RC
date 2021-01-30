@@ -82,6 +82,13 @@ using Rs.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\RC\RC\Rs.Web\Shared\MainLayout.razor"
+using Rs.Config;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

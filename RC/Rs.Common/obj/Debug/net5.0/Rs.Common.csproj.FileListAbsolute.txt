@@ -9,3 +9,4 @@ D:\RC\RC\Rs.Common\obj\Debug\net5.0\Rs.Common.csproj.CoreCompileInputs.cache
 D:\RC\RC\Rs.Common\obj\Debug\net5.0\Rs.Common.dll
 D:\RC\RC\Rs.Common\obj\Debug\net5.0\ref\Rs.Common.dll
 D:\RC\RC\Rs.Common\obj\Debug\net5.0\Rs.Common.pdb
+D:\RC\RC\Rs.Common\obj\Debug\net5.0\Rs.Common.csprojAssemblyReference.cache

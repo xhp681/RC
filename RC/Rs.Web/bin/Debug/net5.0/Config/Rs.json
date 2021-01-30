@@ -1,5 +1,14 @@
-{
-  "Encrpy": "123456789",
-  "ApplicationPath": "",
-  "UpLoadPath": "~/File"
+﻿{
+  "Encrpy": null,
+  "ApplicationPath": "/",
+  "UpLoadPath": "~/Upload",
+  "CompanyInfo": {
+    "Name": "\u5DDD\u6E1D\u8F6F\u4EF6\u5F00\u53D1\u5DE5\u4F5C\u5BA4\u6709\u9650\u8D23\u4EFB\u516C\u53F8",
+    "Address": "\u5E73\u660C\u53BF\u9E7F\u9E23\u9547\u5411\u6C0F\u96C6\u56E213\u697C22\u53F7",
+    "PostCode": "640014",
+    "ServerPhone": "15828469068|0827-6818083|028-86131401",
+    "ComplainPhone": "12345",
+    "Fax": null,
+    "Email": "527883283@qq.com"
+  }
 }

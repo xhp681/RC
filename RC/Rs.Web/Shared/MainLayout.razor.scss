@@ -150,7 +150,7 @@ $color-border: #e4e4e4 ;
         margin: 0 auto;
         width: $width;
         text-align: center;
-
+        /*底部菜单*/
         .footer-nav {
             height: 32px;
             line-height: 32px;
@@ -170,6 +170,14 @@ $color-border: #e4e4e4 ;
                     color: rgb(255,0,0);
                 }
             }
+        }
+        /*底部地址信息*/
+        .footer-info{
+            .footer-info-div{
+                text-align:center;
+                line-height:22px;
+            }
+            
         }
     }
 }

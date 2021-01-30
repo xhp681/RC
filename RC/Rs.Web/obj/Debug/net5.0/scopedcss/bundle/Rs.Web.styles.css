@@ -2,6 +2,7 @@
 main[b-b9kgfyesnj] {
 }
 /* _content/Rs.Web/Shared/MainLayout.razor.rz.scp.css */
+@charset "UTF-8";
 .top-menus[b-q7yjeki87c] {
   background-color: #e4e4e4;
   height: 32px; }
@@ -107,7 +108,9 @@ main[b-b9kgfyesnj] {
   .menu-navs .div-footer[b-q7yjeki87c] {
     margin: 0 auto;
     width: 1024px;
-    text-align: center; }
+    text-align: center;
+    /*底部菜单*/
+    /*底部地址信息*/ }
     .menu-navs .div-footer .footer-nav[b-q7yjeki87c] {
       height: 32px;
       line-height: 32px;
@@ -121,6 +124,9 @@ main[b-b9kgfyesnj] {
           color: #ff8400; }
         .menu-navs .div-footer .footer-nav .footer-nav-div a:hover[b-q7yjeki87c], .menu-navs .div-footer .footer-nav .footer-splite-div a:hover[b-q7yjeki87c] {
           color: red; }
+    .menu-navs .div-footer .footer-info .footer-info-div[b-q7yjeki87c] {
+      text-align: center;
+      line-height: 22px; }
 
 .page[b-q7yjeki87c] {
   position: relative;

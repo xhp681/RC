@@ -1,5 +1,9 @@
 ﻿@inherits LayoutComponentBase
-
+@using Rs.Config;
+@{ 
+    RsConfig rsConfig = Extension.ReadConfigFile<RsConfig>();
+    SiteConfig siteConfig = Extension.ReadConfigFile<SiteConfig>(Extension.SiteConfigFile);
+}
 
 <div class="top-menus">
     <div class="menus-nav">
@@ -31,16 +35,20 @@
         <div class="div-li div-nav"><a href="/">普工频道</a></div>
         <div class="div-li div-nav"><a href="/">地图找工作</a></div>
         @{
-            string[] tel = new string[3] { "028-86131401", "0827-6818083", "15828469068" };
-            int count = tel.Length;
-            Random random = new Random();
-            int num = random.Next(1, 10);
-            int array = num % count;
-            string telphone = tel[array];
+            if (!string.IsNullOrEmpty(rsConfig.CompanyInfo.ServerPhone))
+            {
+                string[] tel = rsConfig.CompanyInfo.ServerPhone.Split('|');
+                int count = tel.Length;
+                Random random = new Random();
+                int num = random.Next(1, 10);
+                int array = num % count;
+                string telphone = tel[array];
+                <div class="div-tel" alt="客服热线:@telphone">
+                    客服热线:@telphone
+                </div>
+            }
         }
-        <div class="div-tel" alt="客服热线:@telphone">
-            客服热线:@telphone
-        </div>
+
     </div>
     @Body
     <div class="clear-b"></div>
@@ -58,13 +66,30 @@
             <font class="footer-splite-div">/</font>
             <font class="footer-nav-div"><a href="" target="">手机版</a></font>
         </div>
+        <div class="clear-b"></div>
+        <div class="footer-info">
+            <div class="footer-info-div">Copyright &copy2020-@DateTime.Now.Year @siteConfig.Http All rights reserved</div>
+            <div class="footer-info-div">@rsConfig.CompanyInfo.Name 版权所有  地址:@rsConfig.CompanyInfo.Address 邮政编码:@rsConfig.CompanyInfo.PostCode</div>
+            <div class="footer-info-div">
+                服务电话:@rsConfig.CompanyInfo.ServerPhone.Replace("|", " ")  传真:@rsConfig.CompanyInfo.Fax Email:@rsConfig.CompanyInfo.Email  用户投诉:@rsConfig.CompanyInfo.ComplainPhone
+            </div>
+            @if (!string.IsNullOrEmpty(siteConfig.ICPLience) && !string.IsNullOrEmpty(siteConfig.WRNCode))
+            {
+                <div class="footer-info-div">增值电信业务经营许可证（ICP证）@siteConfig.ICPLience 网站备案号：@siteConfig.WRNCode</div>
+            }
+            @if (!string.IsNullOrEmpty(siteConfig.IPSCode))
+            {
+                <div class="footer-info-div">闽公网安备 @siteConfig.WRNCode</div>
+            }
+
+        </div>
     </div>
 </div>
-<div class="page">
-        @*<div class="sidebar">
+
+
+
+@*<div class="page">
+        <div class="sidebar">
             <NavMenu />
-        </div>*@
-    
-    <div class="clear-b"></div>
-    
-</div>
+        </div>
+</div>*@

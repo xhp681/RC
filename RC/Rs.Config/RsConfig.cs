@@ -24,5 +24,9 @@ namespace Rs.Config
         /// 文件上传路径
         /// </summary>
         public string UpLoadPath { get; set; } = "~/Upload";
+        /// <summary>
+        /// 公司信息
+        /// </summary>
+        public CompanyInfo CompanyInfo { get; set; } = new CompanyInfo();
     }
 }

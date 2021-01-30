@@ -1,4 +1,5 @@
-﻿.top-menus {
+﻿@charset "UTF-8";
+.top-menus {
   background-color: #e4e4e4;
   height: 32px; }
   .top-menus .menus-nav {
@@ -103,7 +104,9 @@
   .menu-navs .div-footer {
     margin: 0 auto;
     width: 1024px;
-    text-align: center; }
+    text-align: center;
+    /*底部菜单*/
+    /*底部地址信息*/ }
     .menu-navs .div-footer .footer-nav {
       height: 32px;
       line-height: 32px;
@@ -117,6 +120,9 @@
           color: #ff8400; }
         .menu-navs .div-footer .footer-nav .footer-nav-div a:hover, .menu-navs .div-footer .footer-nav .footer-splite-div a:hover {
           color: red; }
+    .menu-navs .div-footer .footer-info .footer-info-div {
+      text-align: center;
+      line-height: 22px; }
 
 .page {
   position: relative;

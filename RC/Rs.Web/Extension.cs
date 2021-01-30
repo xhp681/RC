@@ -24,6 +24,14 @@ namespace Rs.Web
         /// </summary>
         public static string SiteConfigFile = "site.json";
         /// <summary>
+        /// 全局配置文件
+        /// </summary>
+        public static string RsConfigFile = "rs.json";
+        /// <summary>
+        /// 数据库配置文件
+        /// </summary>
+        public static string DbConfigFile = "db.json";
+        /// <summary>
         /// 读取相应的配置文件
         /// </summary>
         /// <typeparam name="T">配置文件对象</typeparam>
