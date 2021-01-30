@@ -74,14 +74,14 @@
     /*.div-li:first-child {
             padding-left: 0;
         }*/ }
-    .menu-navs .nav-box .div-li[b-q7yjeki87c] {
+    .menu-navs .nav-box .div-li[b-q7yjeki87c], .menu-navs .nav-box .div-tel[b-q7yjeki87c] {
       line-height: 48px;
       padding: 0 8px;
       width: auto;
       height: 48px; }
     .menu-navs .nav-box .div-li:last-child[b-q7yjeki87c] {
       padding-right: 0; }
-    .menu-navs .nav-box .div-li:hover[b-q7yjeki87c] {
+    .menu-navs .nav-box .div-hover[b-q7yjeki87c], .menu-navs .nav-box .div-li:hover[b-q7yjeki87c] {
       height: 46px;
       background-color: red;
       border-bottom: solid 2px #ff8400; }
@@ -94,7 +94,29 @@
         color: white;
         text-decoration: none; }
     .menu-navs .nav-box .div-tel[b-q7yjeki87c] {
-      float: right; }
+      float: right;
+      font-size: 16px;
+      padding-left: 34px;
+      color: white;
+      cursor: pointer;
+      background: url("https://www.qzrc.com/QzrcPc/images/header_img_phone.png") no-repeat left; }
+  .menu-navs .div-footer[b-q7yjeki87c] {
+    margin: 0 auto;
+    width: 1024px;
+    text-align: center; }
+    .menu-navs .div-footer .footer-nav[b-q7yjeki87c] {
+      height: 32px;
+      line-height: 32px;
+      background-color: #e4e4e4; }
+      .menu-navs .div-footer .footer-nav .footer-nav-div[b-q7yjeki87c], .menu-navs .div-footer .footer-nav .footer-splite-div[b-q7yjeki87c] {
+        padding: 0 5px;
+        width: auto;
+        height: 32px;
+        color: #ff8400; }
+        .menu-navs .div-footer .footer-nav .footer-nav-div a[b-q7yjeki87c], .menu-navs .div-footer .footer-nav .footer-splite-div a[b-q7yjeki87c] {
+          color: #ff8400; }
+        .menu-navs .div-footer .footer-nav .footer-nav-div a:hover[b-q7yjeki87c], .menu-navs .div-footer .footer-nav .footer-splite-div a:hover[b-q7yjeki87c] {
+          color: red; }
 
 .page[b-q7yjeki87c] {
   position: relative;

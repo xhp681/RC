@@ -26,4 +26,13 @@
     <Folder Include="Razor\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\images\beian.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\header_img_phone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

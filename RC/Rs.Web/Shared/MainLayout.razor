@@ -23,16 +23,42 @@
 <div class="clear-b"></div>
 <div class="menu-navs">
     <div class="nav-box">
-        <div class="div-li div-nav"><a href="/">首页</a></div>
+        <div class="div-li div-nav div-hover"><a href="/">首页</a></div>
         <div class="div-li div-nav"><a href="/">最新招聘</a></div>
         <div class="div-li div-nav"><a href="/">最新简历</a></div>
         <div class="div-li div-nav"><a href="/">名企招聘</a></div>
         <div class="div-li div-nav"><a href="/">高级人才</a></div>
         <div class="div-li div-nav"><a href="/">普工频道</a></div>
         <div class="div-li div-nav"><a href="/">地图找工作</a></div>
-        <div class="div-li div-tel">客服热线:028-86131401</div>
+        @{
+            string[] tel = new string[3] { "028-86131401", "0827-6818083", "15828469068" };
+            int count = tel.Length;
+            Random random = new Random();
+            int num = random.Next(1, 10);
+            int array = num % count;
+            string telphone = tel[array];
+        }
+        <div class="div-tel" alt="客服热线:@telphone">
+            客服热线:@telphone
+        </div>
     </div>
     @Body
+    <div class="clear-b"></div>
+    <div class="div-footer">
+        <div class="footer-nav">
+            <font class="footer-nav-div"><a href="" target="">关于我们</a></font>
+            <font class="footer-splite-div">/</font>
+            <font class="footer-nav-div"><a href="" target="">友情链接</a></font>
+            <font class="footer-splite-div">/</font>
+            <font class="footer-nav-div"><a href="" target="">收费标准</a></font>
+            <font class="footer-splite-div">/</font>
+            <font class="footer-nav-div"><a href="" target="">常见问题</a></font>
+            <font class="footer-splite-div">/</font>
+            <font class="footer-nav-div"><a href="" target="">联系我们</a></font>
+            <font class="footer-splite-div">/</font>
+            <font class="footer-nav-div"><a href="" target="">手机版</a></font>
+        </div>
+    </div>
 </div>
 <div class="page">
         @*<div class="sidebar">
