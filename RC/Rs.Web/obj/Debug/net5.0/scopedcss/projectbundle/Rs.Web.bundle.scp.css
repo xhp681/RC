@@ -74,9 +74,33 @@ main[b-b9kgfyesnj] {
 .menu-navs[b-q7yjeki87c] {
   background-color: rgba(255, 0, 0, 0.7);
   height: 48px; }
-  .menu-navs .menus-nav[b-q7yjeki87c] {
+  .menu-navs .nav-box[b-q7yjeki87c] {
     margin: 0 auto;
-    width: 1024px; }
+    width: 1024px;
+    /*.div-li:first-child {
+            padding-left: 0;
+        }*/ }
+    .menu-navs .nav-box .div-li[b-q7yjeki87c] {
+      line-height: 48px;
+      padding: 0 8px;
+      width: auto;
+      height: 48px; }
+    .menu-navs .nav-box .div-li:last-child[b-q7yjeki87c] {
+      padding-right: 0; }
+    .menu-navs .nav-box .div-li:hover[b-q7yjeki87c] {
+      height: 46px;
+      background-color: red;
+      border-bottom: solid 2px #ff8400; }
+    .menu-navs .nav-box .div-nav[b-q7yjeki87c] {
+      float: left; }
+      .menu-navs .nav-box .div-nav a[b-q7yjeki87c] {
+        color: white;
+        font-size: 16px; }
+      .menu-navs .nav-box .div-nav a:hover[b-q7yjeki87c] {
+        color: white;
+        text-decoration: none; }
+    .menu-navs .nav-box .div-tel[b-q7yjeki87c] {
+      float: right; }
 
 .page[b-q7yjeki87c] {
   position: relative;
