@@ -28,7 +28,7 @@ $color-border: #e4e4e4;
     .div-jipin-tab {
         float: left;
 
-        $tab-heigh: 34px;
+        $tab-heigh: 32px;
         height: $tab-heigh;
         line-height: $tab-heigh;
         width: ((430px)-2px)/4;
@@ -38,14 +38,14 @@ $color-border: #e4e4e4;
         cursor: pointer;
 
         .font-rd {
-            padding-left: 10px;
+            padding-left: 14px;
             font-size: 14px;
             font-weight: bold;
             background: url('https://www.qzrc.com/QzrcPc/images/rdgg_01.png') no-repeat 6px center;
         }
 
         .font-zq {
-            padding-left: 10px;
+            padding-left: 14px;
             font-size: 14px;
             font-weight: bold;
             background: url('https://www.qzrc.com/QzrcPc/images/jp_01.png') no-repeat 6px center;
