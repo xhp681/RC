@@ -19,10 +19,61 @@ $color-border: #e4e4e4;
     width:214px;
     
 }
-.div-jipin{
-    float:left;
-    margin-left:10px;
-    width:430px;
+.div-jipin {
+    float: left;
+    margin-left: 10px;
+    width: 430px;
+    position: relative;
+
+    .div-jipin-tab {
+        float: left;
+
+        $tab-heigh: 34px;
+        height: $tab-heigh;
+        line-height: $tab-heigh;
+        width: ((430px)-2px)/4;
+        border-right: solid 1px #dddddd;
+        background-color: #ececec;
+        text-align: center;
+        cursor: pointer;
+
+        .font-rd {
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            background: url('https://www.qzrc.com/QzrcPc/images/rdgg_01.png') no-repeat 6px center;
+        }
+
+        .font-zq {
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            background: url('https://www.qzrc.com/QzrcPc/images/jp_01.png') no-repeat 6px center;
+        }
+
+        .jipin-tab-box {
+            position: absolute;
+            top: $tab-heigh;
+            left: 0;
+            width: (430px)-2px;
+            height: (280px)-(34px)-2px;
+            display: none;
+        }
+    }
+
+
+
+    .div-jipin-tab:hover {
+        background-color: rgb(255,255,255);
+
+        .jipin-tab-box {
+            display: block;
+        }
+    }
+
+    .div-jipin-tab:last-child {
+        border-right: none;
+    }
 }
 .div-gg-banner{
     float:right;

@@ -17,7 +17,40 @@
 .div-jipin {
   float: left;
   margin-left: 10px;
-  width: 430px; }
+  width: 430px;
+  position: relative; }
+  .div-jipin .div-jipin-tab {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    width: 107px;
+    border-right: solid 1px #dddddd;
+    background-color: #ececec;
+    text-align: center;
+    cursor: pointer; }
+    .div-jipin .div-jipin-tab .font-rd {
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      background: url("https://www.qzrc.com/QzrcPc/images/rdgg_01.png") no-repeat 6px center; }
+    .div-jipin .div-jipin-tab .font-zq {
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      background: url("https://www.qzrc.com/QzrcPc/images/jp_01.png") no-repeat 6px center; }
+    .div-jipin .div-jipin-tab .jipin-tab-box {
+      position: absolute;
+      top: 34px;
+      left: 0;
+      width: 428px;
+      height: 244px;
+      display: none; }
+  .div-jipin .div-jipin-tab:hover {
+    background-color: white; }
+    .div-jipin .div-jipin-tab:hover .jipin-tab-box {
+      display: block; }
+  .div-jipin .div-jipin-tab:last-child {
+    border-right: none; }
 
 .div-gg-banner {
   float: right;
