@@ -26,7 +26,6 @@ D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.RazorComponent.input.cache
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
-D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
@@ -39,7 +38,6 @@ D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.RazorCoreGenerate.cache
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\App.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
-D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
@@ -62,6 +60,10 @@ D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.dll
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\ref\Rs.Web.dll
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.pdb
 D:\RC\RC\Rs.Web\obj\Debug\net5.0\Rs.Web.genruntimeconfig.cache
-D:\RC\RC\Rs.Web\obj\Debug\net5.0\scopedcss\Pages\Index.razor.rz.scp.css
 D:\RC\RC\Rs.Web\bin\Debug\net5.0\wwwroot\images\beian.gif
 D:\RC\RC\Rs.Web\bin\Debug\net5.0\wwwroot\images\header_img_phone.png
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Razor\CompanyList.razor.g.cs
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\RazorDeclaration\Razor\Index.razor.g.cs
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Razor\CompanyList.razor.g.cs
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\Razor\Razor\Index.razor.g.cs
+D:\RC\RC\Rs.Web\obj\Debug\net5.0\scopedcss\Razor\Index.razor.rz.scp.css

@@ -1,6 +1,14 @@
-/* _content/Rs.Web/Pages/Index.razor.rz.scp.css */
-main[b-b9kgfyesnj] {
-}
+/* _content/Rs.Web/Razor/Index.razor.rz.scp.css */
+.main[b-0107ey48l3] {
+  margin: auto auto;
+  width: 1024px; }
+
+.div-login[b-0107ey48l3] {
+  float: left;
+  width: 214px;
+  height: 280px;
+  border: solid 1px #e4e4e4;
+  border-radius: 2px; }
 /* _content/Rs.Web/Shared/MainLayout.razor.rz.scp.css */
 @charset "UTF-8";
 .top-menus[b-q7yjeki87c] {
@@ -41,10 +49,6 @@ main[b-b9kgfyesnj] {
       background-color: white; }
       .top-menus .menus-nav .nav-li:hover .qr-code[b-q7yjeki87c] {
         display: block; }
-
-.clear-b[b-q7yjeki87c] {
-  clear: both;
-  height: 10px; }
 
 .main[b-q7yjeki87c] {
   margin: auto auto;

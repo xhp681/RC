@@ -38,10 +38,6 @@
       .top-menus .menus-nav .nav-li:hover .qr-code {
         display: block; }
 
-.clear-b {
-  clear: both;
-  height: 10px; }
-
 .main {
   margin: auto auto;
   /*flex: 1;*/

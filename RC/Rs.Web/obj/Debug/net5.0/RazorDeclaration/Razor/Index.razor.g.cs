@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Rs.Web.Pages
+namespace Rs.Web.Razor
 {
     #line hidden
     using System;

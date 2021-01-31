@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.Web", "Rs.Web\Rs.Web.csproj", "{E5F74B15-DCED-4309-BA9D-1D2A34545B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Web", "Rs.Web\Rs.Web.csproj", "{E5F74B15-DCED-4309-BA9D-1D2A34545B31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.DataBase", "Rs.DataBase\Rs.DataBase.csproj", "{A7B0B08C-E9D7-41ED-87E5-0E818960068C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.DataBase", "Rs.DataBase\Rs.DataBase.csproj", "{A7B0B08C-E9D7-41ED-87E5-0E818960068C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.Config", "Rs.Config\Rs.Config.csproj", "{BB24A3FC-CEED-4321-86F5-76C4A816DE61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Config", "Rs.Config\Rs.Config.csproj", "{BB24A3FC-CEED-4321-86F5-76C4A816DE61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.Common", "Rs.Common\Rs.Common.csproj", "{A8423C3A-A09B-4DC3-947A-C1182E836338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Common", "Rs.Common\Rs.Common.csproj", "{A8423C3A-A09B-4DC3-947A-C1182E836338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

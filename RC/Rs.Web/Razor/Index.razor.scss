@@ -1,0 +1,14 @@
+﻿$width:1024px;
+$color-border: #e4e4e4;
+
+.main {
+    margin: auto auto;
+    width:$width;
+}
+.div-login{
+    float:left;
+    width:214px;
+    height:280px;
+    border:solid 1px $color-border;
+    border-radius:2px;
+}

@@ -1,0 +1,10 @@
+﻿.main {
+  margin: auto auto;
+  width: 1024px; }
+
+.div-login {
+  float: left;
+  width: 214px;
+  height: 280px;
+  border: solid 1px #e4e4e4;
+  border-radius: 2px; }
