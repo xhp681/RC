@@ -45,7 +45,46 @@
       left: 0;
       width: 428px;
       height: 244px;
+      text-align: left;
       display: none; }
+      .div-jipin .div-jipin-tab .jipin-tab-box .rd-gg[b-0107ey48l3] {
+        padding-left: 17px;
+        /*font-size: 14px;*/
+        font-weight: bold;
+        line-height: 24px;
+        overflow: hidden;
+        background: url("https://www.qzrc.com/QzrcPc/images/5-120601154112.jpg") no-repeat 5px 7px; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .rd-gg .rd-gg-color-1[b-0107ey48l3] {
+          color: red; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .rd-gg .rd-gg-color-2[b-0107ey48l3] {
+          color: blue; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .rd-gg .rd-gg-color-3[b-0107ey48l3] {
+          color: green; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .rd-gg .rd-gg-color-4[b-0107ey48l3] {
+          color: black; }
+      .div-jipin .div-jipin-tab .jipin-tab-box .jp-box[b-0107ey48l3] {
+        float: left;
+        position: relative;
+        padding-left: 24px;
+        width: 214px;
+        line-height: 24px;
+        overflow: hidden;
+        background: url("https://www.qzrc.com/QzrcPc/images/quick.gif") no-repeat 5px 4px; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .jp-box a[b-0107ey48l3] {
+          color: red; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .jp-box a.font-bold[b-0107ey48l3] {
+          font-weight: bold; }
+        .div-jipin .div-jipin-tab .jipin-tab-box .jp-box .zp-zwlist[b-0107ey48l3] {
+          position: absolute;
+          left: 0;
+          top: 24px;
+          min-width: 214px;
+          line-height: 24px;
+          border: solid 1px red;
+          background-color: white;
+          display: none; }
+      .div-jipin .div-jipin-tab .jipin-tab-box .jp-box:hover .zp-zwlist[b-0107ey48l3] {
+        display: block; }
   .div-jipin .div-jipin-tab:hover[b-0107ey48l3] {
     background-color: white; }
     .div-jipin .div-jipin-tab:hover .jipin-tab-box[b-0107ey48l3] {
