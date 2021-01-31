@@ -1,16 +1,42 @@
 @import '';
 
 /* _content/Rs.Web/Razor/Index.razor.rz.scp.css */
+@charset "UTF-8";
 .main[b-0107ey48l3] {
   margin: auto auto;
   width: 1024px; }
 
-.div-login[b-0107ey48l3] {
-  float: left;
-  width: 214px;
-  height: 280px;
+.div-comm[b-0107ey48l3] {
   border: solid 1px #e4e4e4;
   border-radius: 2px; }
+
+.div-top[b-0107ey48l3] {
+  height: 280px; }
+
+.div-login[b-0107ey48l3] {
+  float: left;
+  width: 214px; }
+
+.div-jipin[b-0107ey48l3] {
+  float: left;
+  margin-left: 10px;
+  width: 430px; }
+
+.div-gg-banner[b-0107ey48l3] {
+  float: right;
+  width: 360px; }
+
+/*搜索*/
+.div-ss[b-0107ey48l3] {
+  padding: 5px;
+  width: 1024px;
+  height: 60px; }
+
+/*会员*/
+.div-vip[b-0107ey48l3] {
+  padding: 5px;
+  height: auto;
+  min-height: 40px; }
 /* _content/Rs.Web/Shared/MainLayout.razor.rz.scp.css */
 @charset "UTF-8";
 .top-menus[b-q7yjeki87c] {

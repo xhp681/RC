@@ -5,10 +5,38 @@ $color-border: #e4e4e4;
     margin: auto auto;
     width:$width;
 }
+.div-comm {
+    border: solid 1px $color-border;
+    border-radius: 2px;
+}
+.div-top {
+    height: 280px;
+    
+}
+
 .div-login{
     float:left;
     width:214px;
-    height:280px;
-    border:solid 1px $color-border;
-    border-radius:2px;
+    
+}
+.div-jipin{
+    float:left;
+    margin-left:10px;
+    width:430px;
+}
+.div-gg-banner{
+    float:right;
+    width:($width)-(214px)-(430px)-(20px);
+}
+/*搜索*/
+.div-ss{
+    padding:5px;
+    width:$width;
+    height:60px;
+}
+/*会员*/
+.div-vip {
+    padding: 5px;
+    height: auto;
+    min-height: 40px;
 }

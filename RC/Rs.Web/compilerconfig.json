@@ -18,5 +18,9 @@
   {
     "outputFile": "Pages/Index.razor.css",
     "inputFile": "Pages/Index.razor.scss"
+  },
+  {
+    "outputFile": "Razor/Index.razor.css",
+    "inputFile": "Razor/Index.razor.scss"
   }
 ]
