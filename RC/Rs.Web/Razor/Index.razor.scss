@@ -97,6 +97,7 @@ $color-border: #e4e4e4;
 
                 a {
                     color: rgb(255,0,0);
+                    text-decoration: none;
                 }
 
                 a.font-bold {
@@ -104,27 +105,7 @@ $color-border: #e4e4e4;
                 }
 
                 .zp-zwlist {
-                    position: absolute;
-                    left: 24px;
                     top: 24px;
-                    min-width: ((430px)-2px)/2;
-                    line-height: 24px;
-                    padding-left:28px;
-                    border: solid 1px rgb(255,0,0);
-                    background-color: rgb(255,255,255);
-                    background-image: url('https://qzrc.com/QzrcPc/images/ts.jpg');
-                    background-repeat:repeat-y;
-                    display: none;
-                    z-index: 99;
-                    a{
-                        width:100%;
-                    }
-                }
-            }
-
-            .jp-box:hover {
-                .zp-zwlist {
-                    display: block;
                 }
             }
         }
@@ -144,6 +125,9 @@ $color-border: #e4e4e4;
         border-right: none;
     }
 }
+
+
+
 .div-gg-banner{
     float:right;
     width:($width)-(214px)-(430px)-(20px);
@@ -156,7 +140,112 @@ $color-border: #e4e4e4;
 }
 /*会员*/
 .div-vip {
-    padding: 5px;
+    /*padding: 5px;*/
     height: auto;
     min-height: 40px;
+    .div-title-box {
+        padding: 5px;
+        width: 100%;
+        height: 32px;
+        border-bottom: solid 1px $color-border;
+
+        .line {
+            float: left;
+            margin-top: 8px;
+            width: 5px;
+            height: 15px;
+            background-color: rgb(255,0,0);
+        }
+
+        .space {
+            float: left;
+            padding: 0 10px;
+            line-height: 32px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+        .remark {
+            float: left;
+            line-height: 32px;
+            /*color:#ddd;*/
+        }
+    }
+    /*内容*/
+    .div-content-box {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+
+        .vip-div-comm {
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+        /*图片会员*/
+        .vip-img-2 { /*一张图的情况*/
+            width: (($width)-12px)/2;
+            height: 80px;
+            padding: 0 10px;
+
+            img {
+                border: none;
+                width: (($width)-12px)/2;
+                height: 80px;
+            }
+
+            .zp-zwlist {
+                top: 60px;
+            }
+        }
+
+        .vip-img-2:first-child {
+            padding-left: 0;
+        }
+
+        .vip-img-2:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+/*首页职们显示列表*/
+.zp-zwlist {
+    position: absolute;
+    left: 24px;
+    
+    min-width: ((430px)-2px)/2;
+    line-height: 24px;
+    padding-left: 32px;
+    border: solid 1px rgb(255,0,0);
+    background-color: rgb(255,255,255);
+    background-image: url('https://qzrc.com/QzrcPc/images/ts.jpg');
+    background-repeat: repeat-y;
+    display: none;
+    z-index: 99;
+
+    .li {
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-align: left;
+        overflow: hidden;
+
+        a:hover {
+            font-weight: bold;
+        }
+    }
+
+    .li:last-child {
+        text-align: right;
+    }
+}
+/*鼠标移动后显示的职位信息*/
+.jp-box:hover, .vip-img-2:hover {
+    .zp-zwlist {
+        display: block;
+    }
 }
