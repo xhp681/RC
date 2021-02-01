@@ -64,7 +64,7 @@ namespace Rs.Web
             string filename = $"{ConfitDir}\\{jsonfilename}";
             if (!File.Exists(filename))
             {
-                string Content = JsonSerializer.Serialize<T>(t);
+                string Content = JsonSerializer.Serialize<T>(t, new JsonSerializerOptions() { WriteIndented = true });
                 using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
                 {
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
@@ -72,6 +72,7 @@ namespace Rs.Web
                     {
                         writer.WriteAsync(Content);
                     }
+                    
                 }
             }
         }

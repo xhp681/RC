@@ -4,6 +4,7 @@ $color-border: #e4e4e4;
 .main {
     margin: auto auto;
     width:$width;
+    position:relative;
 }
 .div-comm {
     border: solid 1px $color-border;
@@ -91,8 +92,8 @@ $color-border: #e4e4e4;
                 padding-left: 24px;
                 width: ((430px)-2px)/2;
                 line-height: 24px;
-                overflow: hidden;
-                background: url('https://www.qzrc.com/QzrcPc/images/quick.gif') no-repeat 5px 4px;
+                /*overflow: hidden;*/
+                background: url('https://www.qzrc.com/QzrcPc/images/quick.gif') no-repeat 5px 5px;
 
                 a {
                     color: rgb(255,0,0);
@@ -104,13 +105,20 @@ $color-border: #e4e4e4;
 
                 .zp-zwlist {
                     position: absolute;
-                    left: 0;
+                    left: 24px;
                     top: 24px;
-                    min-width: ((430px)-2px)/2;              
+                    min-width: ((430px)-2px)/2;
                     line-height: 24px;
+                    padding-left:28px;
                     border: solid 1px rgb(255,0,0);
                     background-color: rgb(255,255,255);
+                    background-image: url('https://qzrc.com/QzrcPc/images/ts.jpg');
+                    background-repeat:repeat-y;
                     display: none;
+                    z-index: 99;
+                    a{
+                        width:100%;
+                    }
                 }
             }
 
