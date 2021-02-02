@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Dd9bgpJ6jqIOz6YjbJggpubi0sCU451bzrcG1MRbM8YfrMP9sTYqlzx+W5qT1PeapT8VfEM6h4OhfEWvwctNRw==",
+  "dgSpecHash": "DwTFGB4DkvDi0FsKIn/o9E26kbOwxE5KWmNmAXvZbQN1dr/wTSOwAnqx698YtbHq9VEm5aV4KqNUkhHRLq3sQg==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Common\\Rs.Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DuTNSSvbCRmIxv4Y5ctV5bcVg4REsnZNg4E3CAO1qrcfAXMOLmZDU56Prm9a5ukbz+BIJW5teicamMt3T31unQ==",
+  "dgSpecHash": "2hzdcpYUuWRP6FYKhDIqzEog9vRYOaK9Gobj9WCBSRc2fiFjXgL3hlKS+E9FNOA/h40ilG0q7dNsmT+dzdvKDA==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Web\\Rs.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

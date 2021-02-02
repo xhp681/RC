@@ -1,8 +1,8 @@
 ﻿@inherits LayoutComponentBase
 @using Rs.Config;
 @{ 
-    RsConfig rsConfig = Extension.ReadConfigFile<RsConfig>();
-    SiteConfig siteConfig = Extension.ReadConfigFile<SiteConfig>(Extension.SiteConfigFile);
+    RsConfig rsConfig = Json.ReadConfigFile<RsConfig>();
+    SiteConfig siteConfig = Json.ReadConfigFile<SiteConfig>(Json.SiteConfigFile);
 }
 
 <div class="top-menus">

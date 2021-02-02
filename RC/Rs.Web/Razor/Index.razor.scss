@@ -88,7 +88,7 @@ $color-border: #e4e4e4;
 
             .jp-box {
                 float: left;
-                position: relative;
+                /*position: relative;*/
                 padding-left: 24px;
                 width: ((430px)-2px)/2;
                 line-height: 24px;
@@ -180,7 +180,7 @@ $color-border: #e4e4e4;
 
         .vip-div-comm {
             float: left;
-            position: relative;
+            /*position: relative;*/
             cursor: pointer;
         }
         /*图片会员*/
@@ -245,6 +245,7 @@ $color-border: #e4e4e4;
 }
 /*鼠标移动后显示的职位信息*/
 .jp-box:hover, .vip-img-2:hover {
+    position:relative;
     .zp-zwlist {
         display: block;
     }

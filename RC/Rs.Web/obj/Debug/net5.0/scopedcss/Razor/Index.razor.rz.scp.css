@@ -64,7 +64,7 @@
           color: black; }
       .div-jipin .div-jipin-tab .jipin-tab-box .jp-box[b-0107ey48l3] {
         float: left;
-        position: relative;
+        /*position: relative;*/
         padding-left: 24px;
         width: 214px;
         line-height: 24px;
@@ -99,7 +99,6 @@
   /*padding: 5px;*/
   height: auto;
   min-height: 40px;
-  position: relative;
   /*内容*/ }
   .div-vip .div-title-box[b-0107ey48l3] {
     padding: 5px;
@@ -130,7 +129,7 @@
     /*图片会员*/ }
     .div-vip .div-content-box .vip-div-comm[b-0107ey48l3] {
       float: left;
-      position: relative;
+      /*position: relative;*/
       cursor: pointer; }
     .div-vip .div-content-box .vip-img-2[b-0107ey48l3] {
       /*一张图的情况*/
@@ -173,5 +172,7 @@
     text-align: right; }
 
 /*鼠标移动后显示的职位信息*/
-.jp-box:hover .zp-zwlist[b-0107ey48l3], .vip-img-2:hover .zp-zwlist[b-0107ey48l3] {
-  display: block; }
+.jp-box:hover[b-0107ey48l3], .vip-img-2:hover[b-0107ey48l3] {
+  position: relative; }
+  .jp-box:hover .zp-zwlist[b-0107ey48l3], .vip-img-2:hover .zp-zwlist[b-0107ey48l3] {
+    display: block; }
