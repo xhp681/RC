@@ -4,7 +4,7 @@
 @using Rs.Config;
 @{
     Layout = null;
-    SiteConfig config = Web.Json.ReadConfigFile<SiteConfig>(Web.Json.SiteConfigFile);
+    SiteConfig config = Web.Extension.ReadConfigFile<SiteConfig>(Web.Extension.SiteConfigFile);
 }
 
 <!DOCTYPE html>

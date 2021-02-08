@@ -19,7 +19,8 @@
   float: left;
   margin-left: 10px;
   width: 430px;
-  position: relative; }
+  position: relative;
+  /*.div-jipin-tab:hover,*/ }
   .div-jipin .div-jipin-tab[b-0107ey48l3] {
     float: left;
     height: 32px;
@@ -77,9 +78,9 @@
           font-weight: bold; }
         .div-jipin .div-jipin-tab .jipin-tab-box .jp-box .zp-zwlist[b-0107ey48l3] {
           top: 24px; }
-  .div-jipin .div-jipin-tab:hover[b-0107ey48l3] {
+  .div-jipin .div-jipin-tab-hover[b-0107ey48l3] {
     background-color: white; }
-    .div-jipin .div-jipin-tab:hover .jipin-tab-box[b-0107ey48l3] {
+    .div-jipin .div-jipin-tab-hover .jipin-tab-box[b-0107ey48l3] {
       display: block; }
   .div-jipin .div-jipin-tab:last-child[b-0107ey48l3] {
     border-right: none; }
