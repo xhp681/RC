@@ -17,7 +17,7 @@ namespace Rs.Ply.Framework
         public void CreateDisplayMetadata(DisplayMetadataProviderContext context)
         {
             //get all custom attributes
-            var additionalValues = context.Attributes.OfType<ModelAttributes>().ToList();
+            var additionalValues = context.Attributes.OfType<IModelAttribute>().ToList();
 
             //and try add them as additional values of metadata
             foreach (var additionalValue in additionalValues)

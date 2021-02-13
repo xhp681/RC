@@ -15,6 +15,7 @@ using Rs.Common;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Net.Http.Headers;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
@@ -82,8 +83,8 @@ namespace Rs.Ply.Framework
         public static void UseNopExceptionHandler(this IApplicationBuilder application)
         {
             var appSettings = EngineContext.Current.Resolve<AppSettings>();
-            var webHostEnvironment = EngineContext.Current.Resolve<IWebHostEnvironment>();
-            var useDetailedExceptionPage = appSettings.CommonConfig.DisplayFullErrorStack || webHostEnvironment.IsDevelopment();
+            IWebHostEnvironment env = EngineContext.Current.Resolve<IWebHostEnvironment>();
+            var useDetailedExceptionPage = appSettings.CommonConfig.DisplayFullErrorStack || env.IsDevelopment();
             if (useDetailedExceptionPage)
             {
                 //get detailed exceptions for developing and testing purposes
@@ -290,8 +291,8 @@ namespace Rs.Ply.Framework
             {
                 application.UseStaticFiles(new StaticFileOptions
                 {
-                    FileProvider = new RoxyFilemanProvider(fileProvider.GetAbsolutePath(NopRoxyFilemanDefaults.DefaultRootDirectory.TrimStart('/').Split('/'))),
-                    RequestPath = new PathString(NopRoxyFilemanDefaults.DefaultRootDirectory),
+                    FileProvider = new RoxyFilemanProvider(fileProvider.GetAbsolutePath(RsRoxyFilemanDefaults.DefaultRootDirectory.TrimStart('/').Split('/'))),
+                    RequestPath = new PathString(RsRoxyFilemanDefaults.DefaultRootDirectory),
                     OnPrepareResponse = staticFileResponse
                 });
             }
@@ -346,7 +347,7 @@ namespace Rs.Ply.Framework
                 options.SupportedCultures = cultures;
                 options.DefaultRequestCulture = new RequestCulture(cultures.FirstOrDefault());
 
-                options.AddInitialRequestCultureProvider(new NopRequestCultureProvider(options));
+                options.AddInitialRequestCultureProvider(new RsRequestCultureProvider(options));
             });
         }
 
