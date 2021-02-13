@@ -49,9 +49,9 @@ namespace Rs.Config
             var filePath = fileProvider.MapPath(RsConfigurationDefaults.AppSettingsFilePath);
             fileProvider.CreateFile(filePath);
 
-            //check additional configuration parameters
-            var additionalData =JsonSerializer.Deserialize<AppSettings>(fileProvider.ReadAllText(filePath, Encoding.UTF8))?.AdditionalData;
-            appSettings.AdditionalData = additionalData;
+            //check additional configuration parameters  //此处暂时屏蔽
+            //var additionalData =JsonSerializer.Deserialize<AppSettings>(fileProvider.ReadAllText(filePath, Encoding.UTF8))?.AdditionalData;
+            //appSettings.AdditionalData = additionalData;
 
             //save app settings to the file
             var text =JsonSerializer.Serialize(appSettings, new JsonSerializerOptions() { WriteIndented = true });

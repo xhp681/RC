@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "szCoon5uCRh0DpbfszgMijZMiVleeU+58LZVYirsQ4ZaMkXlyJRXHroTKBf9YnQ06nIgHICbMgtlDf22cgeYCA==",
+  "dgSpecHash": "FTntsi3oplCFzexhwNTKlR5sMf2GAMdIUZXF33tIaHePCGdHcJf0hDwMoaz1b6BIZE6z/ikt8qigv6btpyp/nw==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Ply\\Rs.Ply.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.8.1\\azure.core.1.8.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.extensions.aspnetcore.dataprotection.blobs\\1.2.0\\azure.extensions.aspnetcore.dataprotection.blobs.1.2.0.nupkg.sha512",

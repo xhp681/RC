@@ -43,8 +43,9 @@ namespace Rs.Config
 
         /// <summary>
         /// Gets or sets additional configuration parameters
+        /// JToken  JsonDocument
         /// </summary>
         [JsonExtensionData]
-        public IDictionary<string, JsonDocument> AdditionalData { get; set; }
+        public IDictionary<string,dynamic> AdditionalData { get; set; }
     }
 }

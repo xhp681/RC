@@ -24,7 +24,7 @@ using StackExchange.Profiling.Storage;
 using WebMarkupMin.AspNetCore5;
 using WebMarkupMin.NUglify;
 
-namespace Rs.Ply.Framework.Extensions
+namespace Rs.Ply.Framework
 {
     public static partial class ServiceCollectionExtensions
     {

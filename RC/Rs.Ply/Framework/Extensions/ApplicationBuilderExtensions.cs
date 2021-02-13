@@ -80,7 +80,7 @@ namespace Rs.Ply.Framework
         /// Add exception handling
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopExceptionHandler(this IApplicationBuilder application)
+        public static void UseRsExceptionHandler(this IApplicationBuilder application)
         {
             var appSettings = EngineContext.Current.Resolve<AppSettings>();
             IWebHostEnvironment env = EngineContext.Current.Resolve<IWebHostEnvironment>();
@@ -198,7 +198,7 @@ namespace Rs.Ply.Framework
         /// Configure middleware for dynamically compressing HTTP responses
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopResponseCompression(this IApplicationBuilder application)
+        public static void UseRsResponseCompression(this IApplicationBuilder application)
         {
             //whether to use compression (gzip by default)
             if (DataSettingsManager.IsDatabaseInstalled() && EngineContext.Current.Resolve<CommonSettings>().UseResponseCompression)
@@ -209,7 +209,7 @@ namespace Rs.Ply.Framework
         /// Configure static file serving
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopStaticFiles(this IApplicationBuilder application)
+        public static void UseRsStaticFiles(this IApplicationBuilder application)
         {
             static void staticFileResponse(StaticFileResponseContext context)
             {
@@ -320,7 +320,7 @@ namespace Rs.Ply.Framework
         /// Adds the authentication middleware, which enables authentication capabilities.
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopAuthentication(this IApplicationBuilder application)
+        public static void UseRsAuthentication(this IApplicationBuilder application)
         {
             //check whether database is installed
             if (!DataSettingsManager.IsDatabaseInstalled())
@@ -333,7 +333,7 @@ namespace Rs.Ply.Framework
         /// Configure the request localization feature
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopRequestLocalization(this IApplicationBuilder application)
+        public static void UseRsRequestLocalization(this IApplicationBuilder application)
         {
             application.UseRequestLocalization(async options =>
             {
@@ -355,7 +355,7 @@ namespace Rs.Ply.Framework
         /// Configure Endpoints routing
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopEndpoints(this IApplicationBuilder application)
+        public static void UseRsEndpoints(this IApplicationBuilder application)
         {
             //Execute the endpoint selected by the routing middleware
             application.UseEndpoints(endpoints =>
@@ -369,7 +369,7 @@ namespace Rs.Ply.Framework
         /// Configure WebMarkupMin
         /// </summary>
         /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public static void UseNopWebMarkupMin(this IApplicationBuilder application)
+        public static void UseRsWebMarkupMin(this IApplicationBuilder application)
         {
             //check whether database is installed
             if (!DataSettingsManager.IsDatabaseInstalled())
