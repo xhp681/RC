@@ -27,7 +27,7 @@ namespace Rs.Server
         /// <returns>The asynchronous task whose result determines that request completed</returns>
         public virtual async Task KeepAliveAsync()
         {
-            await _httpClient.GetStringAsync(RsCommonDefaults.KeepAlivePath);
+            await _httpClient.GetStringAsync(Rs.Config.RsCommonDefaults.KeepAlivePath);
         }
     }
 }

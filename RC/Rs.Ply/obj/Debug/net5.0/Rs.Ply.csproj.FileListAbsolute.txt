@@ -427,3 +427,5 @@ D:\RC\RC\Rs.Ply\obj\Debug\net5.0\Rs.Ply.MvcApplicationPartsAssemblyInfo.cs
 D:\RC\RC\Rs.Ply\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
 D:\RC\RC\Rs.Ply\bin\Debug\net5.0\App_Data\appsettings.json
 D:\RC\RC\Rs.Ply\bin\Debug\net5.0\Npgsql.dll
+D:\RC\RC\Rs.Ply\obj\Debug\net5.0\Razor\Views\Install\Index.cshtml.g.cs
+D:\RC\RC\Rs.Ply\obj\Debug\net5.0\Razor\Views\Install\_ViewImports.cshtml.g.cs

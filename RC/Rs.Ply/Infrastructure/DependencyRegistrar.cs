@@ -19,7 +19,7 @@ namespace Rs.Ply.Infrastructure
         public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, AppSettings appSettings)
         {
             //installation localization service
-            //builder.RegisterType<InstallationLocalizationService>().As<IInstallationLocalizationService>().InstancePerLifetimeScope();
+            builder.RegisterType<InstallationLocalizationService>().As<IInstallationLocalizationService>().InstancePerLifetimeScope();
 
             //common factories
             //builder.RegisterType<AclSupportedModelFactory>().As<IAclSupportedModelFactory>().InstancePerLifetimeScope();

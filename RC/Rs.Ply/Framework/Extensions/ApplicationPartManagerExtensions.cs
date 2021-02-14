@@ -3,6 +3,7 @@ using Rs.Common;
 using Rs.Config;
 using Rs.DataBase;
 using Rs.Server;
+using Rs.Server.Plugins;
 using System;
 using System.Collections.Generic;
 using System.IO;

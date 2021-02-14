@@ -11,7 +11,6 @@ namespace AspNetCore
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
-    using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
 using Rs.Ply;
@@ -26,8 +25,29 @@ using Rs.Ply.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using System.Text.Encodings.Web;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Microsoft.Extensions.Primitives;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8ddb6bffa5a9b264bf8f89038bf03c234083fd3", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"711b50ac1648166291039a6efa9b9f97e6c92c17", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bfc96df0780fab3a53d3b9dc7414b591fbe5242", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

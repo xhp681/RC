@@ -88,7 +88,7 @@ namespace Rs.Config
         /// {1} : whether the store based is on the localhost
         /// {2} : language code
         /// </remarks>
-        public static string NopCopyrightWarningPath => "site-warnings?url={0}&local={1}&language={2}";
+        public static string RsCopyrightWarningPath => "site-warnings?url={0}&local={1}&language={2}";
 
         /// <summary>
         /// Gets a path to request the nopCommerce official site for news RSS
@@ -100,7 +100,7 @@ namespace Rs.Config
         /// {3} : store URL
         /// {4} : language code
         /// </remarks>
-        public static string NopNewsRssPath => "nopcommerce-news-rss?version={0}&localhost={1}&hideAdvertisements={2}&storeUrl={3}&language={4}";
+        public static string RsNewsRssPath => "nopcommerce-news-rss?version={0}&localhost={1}&hideAdvertisements={2}&storeUrl={3}&language={4}";
 
         /// <summary>
         /// Gets a path to request the nopCommerce official site to notify about successful installation
@@ -113,7 +113,7 @@ namespace Rs.Config
         /// {4} : language code
         /// {5} : culture name
         /// </remarks>
-        public static string NopInstallationCompletedPath => "installation-completed?version={0}&local={1}&email={2}&url={3}&language={4}&culture={5}";
+        public static string RsInstallationCompletedPath => "installation-completed?version={0}&local={1}&email={2}&url={3}&language={4}&culture={5}";
 
         /// <summary>
         /// Gets a path to request the nopCommerce official site for available categories of marketplace extensions
@@ -121,7 +121,7 @@ namespace Rs.Config
         /// <remarks>
         /// {0} : language code
         /// </remarks>
-        public static string NopExtensionsCategoriesPath => "extensions-feed?getCategories=1&language={0}";
+        public static string RsExtensionsCategoriesPath => "extensions-feed?getCategories=1&language={0}";
 
         /// <summary>
         /// Gets a path to request the nopCommerce official site for available versions of marketplace extensions
@@ -129,7 +129,7 @@ namespace Rs.Config
         /// <remarks>
         /// {0} : language code
         /// </remarks>
-        public static string NopExtensionsVersionsPath => "extensions-feed?getVersions=1&language={0}";
+        public static string RsExtensionsVersionsPath => "extensions-feed?getVersions=1&language={0}";
 
         /// <summary>
         /// Gets a path to request the nopCommerce official site for marketplace extensions

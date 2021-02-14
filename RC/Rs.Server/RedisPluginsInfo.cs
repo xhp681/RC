@@ -1,5 +1,6 @@
 ﻿using Rs.Common;
 using Rs.Config;
+using Rs.Server.Plugins;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;

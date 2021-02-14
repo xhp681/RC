@@ -30,7 +30,7 @@ namespace Rs.Server
             if (await DataSettingsManager.IsDatabaseInstalledAsync())
             {
                 //keep alive page requested (we ignore it to prevent creating a guest customer records)
-                var keepAliveUrl = $"{webHelper.GetStoreLocation()}{RsCommonDefaults.KeepAlivePath}";
+                var keepAliveUrl = $"{webHelper.GetStoreLocation()}{Rs.Config.RsCommonDefaults.KeepAlivePath}";
                 if ((webHelper.GetThisPageUrl(false)).StartsWith(keepAliveUrl, StringComparison.InvariantCultureIgnoreCase))
                     return;
             }

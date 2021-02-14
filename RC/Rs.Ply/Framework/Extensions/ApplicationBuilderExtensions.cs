@@ -273,7 +273,7 @@ namespace Rs.Ply.Framework.Extensions
 
             application.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(fileProvider.GetAbsolutePath(RsCommonDefaults.DbBackupsPath)),
+                FileProvider = new PhysicalFileProvider(fileProvider.GetAbsolutePath(Rs.Config.RsCommonDefaults.DbBackupsPath)),
                 RequestPath = new PathString("/db_backups"),
                 ContentTypeProvider = provider
             });
