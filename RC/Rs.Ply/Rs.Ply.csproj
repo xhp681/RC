@@ -24,4 +24,10 @@
     <ProjectReference Include="..\Rs.Server\Rs.Server.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Themes\" />
+    <Folder Include="wwwroot\db_backups\" />
+    <Folder Include="wwwroot\icons\" />
+  </ItemGroup>
+
 </Project>

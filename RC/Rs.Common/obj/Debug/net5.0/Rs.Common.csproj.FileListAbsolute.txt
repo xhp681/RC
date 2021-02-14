@@ -292,3 +292,4 @@ D:\RC\RC\Rs.Common\bin\Debug\net5.0\refs\System.Xml.XmlSerializer.dll
 D:\RC\RC\Rs.Common\bin\Debug\net5.0\refs\System.Xml.XPath.dll
 D:\RC\RC\Rs.Common\bin\Debug\net5.0\refs\System.Xml.XPath.XDocument.dll
 D:\RC\RC\Rs.Common\bin\Debug\net5.0\refs\WindowsBase.dll
+D:\RC\RC\Rs.Common\obj\Debug\net5.0\Rs.Common.csprojAssemblyReference.cache
