@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Rs.Ply.Framework
+namespace Rs.Ply.Framework.Mvc
 {
     public class RoutePublisher: IRoutePublisher
     {

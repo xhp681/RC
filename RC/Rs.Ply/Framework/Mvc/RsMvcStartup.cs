@@ -2,14 +2,14 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Rs.Config;
-using Rs.Ply.Framework;
+using Rs.Ply.Framework.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rs.Server
+namespace Rs.Ply.Framework.Mvc
 {
     public partial class RsMvcStartup:IRsStartup
     {

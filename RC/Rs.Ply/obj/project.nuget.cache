@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FTntsi3oplCFzexhwNTKlR5sMf2GAMdIUZXF33tIaHePCGdHcJf0hDwMoaz1b6BIZE6z/ikt8qigv6btpyp/nw==",
+  "dgSpecHash": "VtAhes0VDS3qBn6Pqd6Fr0i28Lr2K7AXWM7gHA2V69AkGHogunlwoUZk9RSIChNzRf8CzfFtse8NkT9MA3Jvhw==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Ply\\Rs.Ply.csproj",
   "expectedPackageFiles": [
@@ -77,6 +77,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\miniprofiler.shared\\4.2.22\\miniprofiler.shared.4.2.22.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql\\5.0.3\\npgsql.5.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\nuglify\\1.13.2\\nuglify.1.13.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\redlock.net\\2.2.0\\redlock.net.2.2.0.nupkg.sha512",

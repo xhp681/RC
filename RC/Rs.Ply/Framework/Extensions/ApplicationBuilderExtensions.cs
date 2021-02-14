@@ -20,8 +20,9 @@ using Microsoft.AspNetCore.Authentication;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using WebMarkupMin.AspNetCore5;
+using Rs.Ply.Framework.Mvc;
 
-namespace Rs.Ply.Framework
+namespace Rs.Ply.Framework.Extensions
 {
     public static partial class ApplicationBuilderExtensions
     {

@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Rs.Ply.Framework
+namespace Rs.Ply.Framework.Extensions
 {
     public static partial class ApplicationPartManagerExtensions
     {
