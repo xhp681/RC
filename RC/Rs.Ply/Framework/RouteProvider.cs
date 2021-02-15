@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
+using Rs.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -562,8 +563,8 @@ namespace Rs.Ply.Framework
                 new { controller = "Common", action = "StoreClosed" });
 
             //install
-            //endpointRouteBuilder.MapControllerRoute("Installation", $"{pattern}{RsInstallationDefaults.InstallPath}",
-            //    new { controller = "Install", action = "Index" });
+            endpointRouteBuilder.MapControllerRoute("Installation", $"{pattern}{RsInstallationDefaults.InstallPath}",
+                new { controller = "Install", action = "Index" });
 
             //error page
             endpointRouteBuilder.MapControllerRoute("Error", "error",

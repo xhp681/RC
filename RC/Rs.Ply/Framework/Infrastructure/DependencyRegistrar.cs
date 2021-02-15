@@ -6,6 +6,8 @@ using Rs.Config;
 using Rs.DataBase;
 using Rs.Ply.Framework.Mvc;
 using Rs.Server;
+using Rs.Server.Helpers;
+using Rs.Server.Installation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +33,7 @@ namespace Rs.Ply.Framework.Infrastructure
             builder.RegisterType<WebHelper>().As<IWebHelper>().InstancePerLifetimeScope();
 
             //user agent helper
-            //builder.RegisterType<UserAgentHelper>().As<IUserAgentHelper>().InstancePerLifetimeScope();
+            builder.RegisterType<UserAgentHelper>().As<IUserAgentHelper>().InstancePerLifetimeScope();
 
             //data layer
             builder.RegisterType<DataProviderManager>().As<IDataProviderManager>().InstancePerDependency();
@@ -67,7 +69,7 @@ namespace Rs.Ply.Framework.Infrastructure
             }
 
             //work context
-            //builder.RegisterType<WebWorkContext>().As<IWorkContext>().InstancePerLifetimeScope();
+            builder.RegisterType<WebWorkContext>().As<IWorkContext>().InstancePerLifetimeScope();
 
             //store context
             //builder.RegisterType<WebStoreContext>().As<IStoreContext>().InstancePerLifetimeScope();
@@ -214,8 +216,8 @@ namespace Rs.Ply.Framework.Infrastructure
             //}).As<IRoxyFilemanService>().InstancePerLifetimeScope();
 
             //installation service
-            //if (!DataSettingsManager.IsDatabaseInstalled())
-            //    builder.RegisterType<CodeFirstInstallationService>().As<IInstallationService>().InstancePerLifetimeScope();
+            if (!DataSettingsManager.IsDatabaseInstalled())
+                builder.RegisterType<CodeFirstInstallationService>().As<IInstallationService>().InstancePerLifetimeScope();
 
             //slug route transformer
             //if (DataSettingsManager.IsDatabaseInstalled())
