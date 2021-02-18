@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Builder;
 using Autofac.Core;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Rs.Common;
 using Rs.Config;
 using Rs.DataBase;
@@ -40,7 +41,7 @@ namespace Rs.Ply.Framework.Infrastructure
             builder.Register(context => context.Resolve<IDataProviderManager>().DataProvider).As<IRsDataProvider>().InstancePerDependency();
 
             //repositories
-            //builder.RegisterGeneric(typeof(EntityRepository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
+            builder.RegisterGeneric(typeof(EntityRepository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
             //plugins
             //builder.RegisterType<PluginService>().As<IPluginService>().InstancePerLifetimeScope();
@@ -193,7 +194,7 @@ namespace Rs.Ply.Framework.Infrastructure
             //builder.RegisterType<ShippingPluginManager>().As<IShippingPluginManager>().InstancePerLifetimeScope();
             //builder.RegisterType<TaxPluginManager>().As<ITaxPluginManager>().InstancePerLifetimeScope();
 
-            //builder.RegisterType<ActionContextAccessor>().As<IActionContextAccessor>().InstancePerLifetimeScope();
+            builder.RegisterType<ActionContextAccessor>().As<IActionContextAccessor>().InstancePerLifetimeScope();
 
             //register all settings
             builder.RegisterSource(new SettingsSource());

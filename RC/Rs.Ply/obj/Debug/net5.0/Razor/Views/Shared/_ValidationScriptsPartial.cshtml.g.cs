@@ -26,28 +26,56 @@ using Rs.Ply.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+#line 8 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
 using System.Text.Encodings.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+#line 9 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+#line 10 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
 using Microsoft.Extensions.Primitives;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Rs.Ply.Framework.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Rs.Ply.Framework.Extensions;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Rs.Ply.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\RC\RC\Rs.Ply\Views\_ViewImports.cshtml"
+using Rs.Ply.Framework.Themes;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b5e5ef4ebf7354cc35c7dacddd6bc3068f19a47", @"/Views/Shared/_ValidationScriptsPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bfc96df0780fab3a53d3b9dc7414b591fbe5242", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dfcf5511762f5d960398dbff6ad9464077355007", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ValidationScriptsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/lib/jquery-validation/dist/jquery.validate.min.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -76,7 +104,7 @@ using Microsoft.Extensions.Primitives;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b5e5ef4ebf7354cc35c7dacddd6bc3068f19a474273", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b5e5ef4ebf7354cc35c7dacddd6bc3068f19a474900", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -90,7 +118,7 @@ using Microsoft.Extensions.Primitives;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b5e5ef4ebf7354cc35c7dacddd6bc3068f19a475312", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b5e5ef4ebf7354cc35c7dacddd6bc3068f19a475939", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

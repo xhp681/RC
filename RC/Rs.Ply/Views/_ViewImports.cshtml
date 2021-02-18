@@ -1,7 +1,14 @@
 ﻿@using Rs.Ply
 @using Rs.Ply.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@removeTagHelper Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Rs.Ply.Framework
+@addTagHelper *, MiniProfiler.AspNetCore.Mvc
 
 @using System.Text.Encodings.Web
 @using Microsoft.AspNetCore.Mvc.ViewFeatures
 @using Microsoft.Extensions.Primitives
+@using Rs.Ply.Framework.TagHelpers
+@using Rs.Ply.Framework.Extensions
+@using Rs.Ply.Infrastructure
+@using Rs.Ply.Framework.Themes

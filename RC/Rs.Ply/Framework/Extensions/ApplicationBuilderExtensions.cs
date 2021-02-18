@@ -64,16 +64,16 @@ namespace Rs.Ply.Framework.Extensions
                 assembly = Assembly.GetAssembly(typeof(IMigrationManager));
                 migrationManager.ApplyUpMigrations(assembly, true);
 
-//#if DEBUG
+#if DEBUG
 
-//                if (!DataSettingsManager.IsDatabaseInstalled())
-//                    return;
+                if (!DataSettingsManager.IsDatabaseInstalled())
+                    return;
 
-//                //prevent save the update migrations into the DB during the developing process  
-//                var versions = EngineContext.Current.Resolve<IRepository<MigrationVersionInfo>>();
-//                versions.DeleteAsync(mvi => mvi.Description.StartsWith(string.Format(NopMigrationDefaults.UpdateMigrationDescriptionPrefix, NopVersion.FULL_VERSION)));
+                //prevent save the update migrations into the DB during the developing process  
+                var versions = EngineContext.Current.Resolve<IRepository<MigrationVersionInfo>>();
+                versions.DeleteAsync(mvi => mvi.Description.StartsWith(string.Format(RsMigrationDefaults.UpdateMigrationDescriptionPrefix, RsVersion.FULL_VERSION)));
 
-//#endif
+#endif
             }
         }
 
