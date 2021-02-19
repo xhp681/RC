@@ -28,6 +28,7 @@
     <Folder Include="Themes\" />
     <Folder Include="wwwroot\db_backups\" />
     <Folder Include="wwwroot\icons\" />
+    <Folder Include="wwwroot\images\flags\" />
   </ItemGroup>
 
 </Project>

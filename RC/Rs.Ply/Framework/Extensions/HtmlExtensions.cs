@@ -152,7 +152,7 @@ namespace Rs.Ply.Framework.Extensions
             //keep this method synchronized with
             //"SaveSelectedCardName" method of \Area\Admin\Controllers\BaseAdminController.cs
             var cardName = string.Empty;
-            const string dataKey = "nop.selected-card-name";
+            const string dataKey = "rs.selected-card-name";
 
             if (helper.ViewData.ContainsKey(dataKey))
                 cardName = helper.ViewData[dataKey].ToString();
@@ -174,7 +174,7 @@ namespace Rs.Ply.Framework.Extensions
             //keep this method synchronized with
             //"SaveSelectedTab" method of \Area\Admin\Controllers\BaseAdminController.cs
             var tabName = string.Empty;
-            var dataKey = "nop.selected-tab-name";
+            var dataKey = "rs.selected-tab-name";
             if (!string.IsNullOrEmpty(dataKeyPrefix))
                 dataKey += $"-{dataKeyPrefix}";
 

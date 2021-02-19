@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Rs.Common;
+using Rs.Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,13 @@ using System.Threading.Tasks;
 
 namespace Rs.DataBase
 {
-    public class DbStartup : IDbStartup
+    public class DbStartup : IRsStartup
     {
         public int Order => 10;
 
         public void Configure(IApplicationBuilder application)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)

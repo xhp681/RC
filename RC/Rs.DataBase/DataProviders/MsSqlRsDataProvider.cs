@@ -141,7 +141,8 @@ namespace Rs.DataBase.DataProviders
         public void InitializeDatabase()
         {
             var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
-            migrationManager.ApplyUpMigrations(typeof(DbStartup).Assembly);
+            var type = typeof(DbStartup).Assembly;
+            migrationManager.ApplyUpMigrations(type);
         }
 
         /// <summary>

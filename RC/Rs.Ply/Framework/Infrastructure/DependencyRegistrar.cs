@@ -73,7 +73,7 @@ namespace Rs.Ply.Framework.Infrastructure
             builder.RegisterType<WebWorkContext>().As<IWorkContext>().InstancePerLifetimeScope();
 
             //store context
-            //builder.RegisterType<WebStoreContext>().As<IStoreContext>().InstancePerLifetimeScope();
+            builder.RegisterType<WebStoreContext>().As<IStoreContext>().InstancePerLifetimeScope();
 
             //services
             //builder.RegisterType<BackInStockSubscriptionService>().As<IBackInStockSubscriptionService>().InstancePerLifetimeScope();
@@ -221,8 +221,8 @@ namespace Rs.Ply.Framework.Infrastructure
                 builder.RegisterType<CodeFirstInstallationService>().As<IInstallationService>().InstancePerLifetimeScope();
 
             //slug route transformer
-            //if (DataSettingsManager.IsDatabaseInstalled())
-            //    builder.RegisterType<SlugRouteTransformer>().AsSelf().InstancePerLifetimeScope();
+            if (DataSettingsManager.IsDatabaseInstalled())
+                builder.RegisterType<SlugRouteTransformer>().AsSelf().InstancePerLifetimeScope();
 
             //event consumers
             //var consumers = typeFinder.FindClassesOfType(typeof(IConsumer<>)).ToList();

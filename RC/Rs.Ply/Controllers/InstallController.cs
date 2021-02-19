@@ -116,6 +116,17 @@ namespace Rs.Ply.Controllers
         [IgnoreAntiforgeryToken]
         public virtual async Task<IActionResult> Index(InstallModel model)
         {
+            #region 暂时先进行初始化
+            model.AdminEmail = "527883283@qq.com";
+            model.AdminPassword = "xhp@5201314";
+            model.ConfirmPassword = "xhp@5201314";
+            model.Country = "CN-zh-CN";
+            model.DataProvider = DataProviderType.SqlServer;
+            model.DatabaseName = "LPDB";
+            model.ServerName = "172.16.9.110";
+            model.Password = "lpdb@2021";
+            model.Username = "lpdb";
+            #endregion
             if (await DataSettingsManager.IsDatabaseInstalledAsync())
                 return RedirectToRoute("Homepage");
 

@@ -161,7 +161,7 @@ namespace Rs.DataBase
             fileProvider.CreateFile(filePath);
 
             //save data settings to the file
-            var text = JsonSerializer.Serialize(Singleton<DataSettings>.Instance);
+            var text = JsonSerializer.Serialize(Singleton<DataSettings>.Instance, new JsonSerializerOptions() { WriteIndented = true });
             await fileProvider.WriteAllTextAsync(filePath, text, Encoding.UTF8);
         }
 
