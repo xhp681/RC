@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SFeKG/S8GUMs0zxo2qKwST8SAuz/r9P+qGs+Ry/g1DD4LyYdFYUtvTavmPfgaPrqZapp1VMMeyY0aX6CCN4aBQ==",
+  "dgSpecHash": "+ZW4WkC2tnCr2sd/kePjF6OITPt+eyxdwCzPDz/9dYWwjBTO5xMEXPHfUvBbUtr8qRRUfYc+D0O5ybiSDWT1UQ==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Web\\Rs.Web.csproj",
   "expectedPackageFiles": [
@@ -113,6 +113,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",

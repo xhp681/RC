@@ -1,6 +1,0 @@
-﻿{
-  "DataConnectionString": "Data Source=172.16.9.110;Initial Catalog=LPDB;Integrated Security=False;Persist Security Info=False;User ID=lpdb;Password=lpdb@2021",
-  "DataProvider": "SqlServer",
-  "SQLCommandTimeout": null,
-  "RawDataSettings": {}
-}

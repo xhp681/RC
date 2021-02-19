@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rs.Server
+namespace Rs.Server.Plugins
 {
     public partial interface IPluginService
     {

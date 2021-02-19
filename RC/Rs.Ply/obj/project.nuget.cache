@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VtAhes0VDS3qBn6Pqd6Fr0i28Lr2K7AXWM7gHA2V69AkGHogunlwoUZk9RSIChNzRf8CzfFtse8NkT9MA3Jvhw==",
+  "dgSpecHash": "Q74qXvyQvMOa54ZBNS9QZxJ66ESBSAP2LxkIeSKo2e6Yb+/btbc/N3Y5bwHNVTXUMS+YrzomwBQxyImsmjC17Q==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Rs.Ply\\Rs.Ply.csproj",
   "expectedPackageFiles": [
@@ -137,6 +137,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
