@@ -112,7 +112,7 @@ namespace Nop.Web.Controllers
 
             var model = new InstallModel
             {
-                AdminEmail = "admin@yourStore.com",
+                AdminEmail = "527883283@qq.com",
                 InstallSampleData = false,
                 InstallRegionalResources = _appSettings.InstallationConfig.InstallRegionalResources,
                 DisableSampleDataOption = _appSettings.InstallationConfig.DisableSampleData,

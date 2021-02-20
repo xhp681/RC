@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Nop.Core.Domain.Discounts;
@@ -15,6 +11,10 @@ using Nop.Services.Security;
 using Nop.Web.Framework;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Mvc.Filters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
 {
@@ -95,7 +95,7 @@ namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
             return View("~/Plugins/DiscountRules.CustomerRoles/Views/Configure.cshtml", model);
         }
 
-        [HttpPost]        
+        [HttpPost]
         public async Task<IActionResult> Configure(RequirementModel model)
         {
             if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.ManageDiscounts))
@@ -110,7 +110,7 @@ namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
 
                 //get the discount requirement
                 var discountRequirement = await _discountService.GetDiscountRequirementByIdAsync(model.RequirementId);
-                
+
                 //the discount requirement does not exist, so create a new one
                 if (discountRequirement == null)
                 {
