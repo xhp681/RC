@@ -1,0 +1,167 @@
+﻿@{
+    var config = ConfigHelper.InitRsConfig();
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="@config.KeyWords" />
+    <meta name="Description" content="@config.Descriptions" />
+    <title>@ViewData["Title"] - @config.Title </title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/base.min.css" />
+    <link rel="stylesheet" href="~/css/common.min.css" />
+    @await RenderSectionAsync("Css", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</head>
+<body class="festival">
+    <div class="add_t_wrap">
+        <div id="adSmalls_div" class="add_t2" style="display:none;">
+            <div id="adBigs">
+                <div class="" id="_gatrack_adv_adBigs" data-ga="lamu_adv"></div>
+            </div>
+            <div id="adSmalls" style="display:none"><div class="" id="_gatrack_adv_adSmalls" data-ga="lamu_adv"></div></div>
+        </div>
+    </div>
+    @*<script type="text/javascript">
+        var sameBannerAdv = false;
+        initBanner();
+        </script>
+        <script type="text/javascript">includetop();</script>*@
+    <div class="site_nav">
+        <div class="nav width">
+            <ul class="nav_l">
+                <li id="siteinfo" data-showsite="" class="png site"></li>
+            </ul>
+            <ul class="nav_l" id="top_login_span" stle="clear:both;"></ul>
+            <ul class="nav_r">
+                <li class="t_item mycount" id="myaccount" data-first="yes"><p><a name="_gatrack_event_myaccount" data-ga="site_nav" data-gatext="我的账户" href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.8582602360878059" id="t_item_mycount" rel="nofollow" target="_blank"><span class="text">我的账户<i class="png"></i></span></a></p><div class="mycount_cont loadding" id="myaccount_cont"></div></li>
+                <li class="cart t_item"><a name="_gatrack_event_shoppingcart" data-ga="site_nav" data-gatext="购物车" onclick="gotoCart('cartlink');" href="/Cart/ShowCart.do?amp;tt=0.7239524504448682" class="cartlink_curr" target="_blank"> 购物车<b class="smallcart_totalamount"></b>件 </a></li>
+                <li class="t_item line">|</li>
+                <li class="t_item mycount"><p><a href="javascript:void(0);"><span class="text">客户服务<i class="png"></i></span></a></p><div class="mycount_cont width75"><ul class="item"><li class="nopay"><a target="_blank" name="_gatrack_event_help" data-ga="site_nav" data-gatext="帮助中心" href="http://help.womai.com" rel="nofollow">帮助中心</a></li><li><a target="_blank" name="_gatrack_event_newguide" data-ga="site_nav" data-gatext="新手上路" href="https://www.womai.com/Info/IncludeHelpInfo-cid=50111.htm" rel="nofollow">新手上路</a></li></ul></div></li>
+                <li class="t_item line">|</li>
+                <li class="t_item">
+                    <a target="_blank" name="_gatrack_event_sitemap" data-ga="site_nav" data-gatext="企业购" href="http://www.womai.com/sale/dake/dw2016_t" rel="nofollow">企业购</a>
+                </li>
+                <li class="t_item line">|</li>
+                <li class="t_item backexchange">
+                    <a target="_blank" rel="nofollow" href="https://www.womai.com/sale/2012/icbclika/"><span class="icbcexchange"></span></a>
+
+                    <a target="_blank" rel="nofollow" href="https://www.womai.com/sale/2017/zgyd1711/"><span class="zhongxinexchange_hb"></span></a>
+
+
+
+                </li>
+            </ul>
+            @*<script type="text/javascript">initMyAccountInfo();</script>*@
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="header  clearfix png">
+        <div class="width">
+            <div class="logo"><a href="/index-31000-0.htm" target="_blank" name="_gatrack_event_logo" data-ga="header_logo" data-gatext="logo"><img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" original="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" alt="" /></a></div>
+            <div class="logo_adv fl" id="_gatrack_adv_hearder_left" data-ga="header_adv_left"></div>
+            <div id="searchtop"><form onsubmit="return checkTopSearchForm()" id="searchform" name="searchform" method="get" style="margin: 0px" action="/ProductList.do?mid=0"><input type="hidden" id="SortCid2" name="Cid" value="606"><input type="hidden" id="rypId" name="rypId" value="608"><input type="hidden" id="zhId" name="zhId" value="605"><input type="hidden" name="mid" value="0" /> <input type="hidden" id="thKeywords" name="Keywords" /><input type="hidden" name="searchlist" value="1" /><input type="hidden" id="topmainColumnId" name="mainColumnId" value="-1" /><input type="hidden" id="isKeyCommendClick" name="isKeyCommendClick" value="0" /><input type="hidden" id="oldSearchKeyword" name="oldSearchKeyword" /><input type="hidden" id="searchKeywordPosition" name="searchKeywordPosition" /><input type="hidden" id="topmainColumnIdtitle" name="mainColumnIdtitle" /><div class="search_wrap"><div class="search_c"><div class="form fl" id="inputDiv"><input id="topKeywords" name="topKeywords" type="text" value="进口零食" isSearch="y" data-write=n data-defvalue="进口零食" data-URL="https://www.womai.com/Sort-31000-66110.htm"></div><div class="btn fr" name="_gatrack_event_search" data-ga="header_search" data-gatext="搜索"><button type="submit">搜索</button></div></div><div class="search_r"><a name="_gatrack_event_combiserach" data-ga="header_search" data-gatext="高级搜索" href="/Search.do?mid=0">高级<br>搜索</a></div><div class="search_b"><span class="hot"></span><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="礼盒" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C0%F1%BA%D0,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C0%F1%BA%D0" target="_blank">礼盒</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="粮油" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C1%B8%D3%CD,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C1%B8%D3%CD" target="_blank">粮油</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="大米" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%B4%F3%C3%D7,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%B4%F3%C3%D7" target="_blank">大米</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="牛奶" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C5%A3%C4%CC,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C5%A3%C4%CC" target="_blank">牛奶</a></div></div></form></div>
+            <div class="app" id="_gatrack_adv_hearder_right" data-ga="header_adv_right">
+                <a data-ga="header_right" id="_gatrack_adv_header_adv_right" href=" //www.womai.com/sale/2016/shouji/index.html#page1" target='_blank'><img data-order="1" src='https://pic2.womai.com/upload/backend/2017/04/25/14/1493100962866.jpg' width='160' height='80' alt='手机' border='0' /></a>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <div class="header clearfix png total-container"><div class="width"><div class="logo"><a href="/index-31000-0.htm" target="_blank" name="_gatrack_event_logo" data-ga="header_logo" data-gatext="logo"><img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" original="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" alt="" /></a></div><div id="searchfix"></div><div class="toptuanmobile">企业采购热线<br /><span>4008-117-588</span></div></div></div>
+    <script type="text/javascript" src="https://static.womai.com/js/suggest/jquery.suggest2012.js"></script><link type="text/css" rel="StyleSheet" media="all" href="https://static.womai.com/js/suggest/jquery.suggest.css" />
+    <script type="text/javascript" defer="defer">jQuery("#topKeywords").suggest("/AutoComplete",{minchars:1});</script><!--footer-nav begin--><div class="footer">
+        <div class="helper width"><ul class="mode_wrap"><li class="mode"><h3><span class="icon icon1"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="新手上路" href="/Info/IncludeHelpInfo-cid=50111.htm" target="_blank" rel="nofollow">新手上路</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="新用户演示" href="/Info/IncludeHelpInfo.do?cid=55806" target="_blank" rel="nofollow">新用户演示</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="会员积分计划" href="/Info/IncludeHelpInfo.do?cid=54010" target="_blank" rel="nofollow">会员积分计划</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="会员等级规则" href="/Info/InfoDetail-id=59901.htm" target="_blank" rel="nofollow">会员等级规则</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="售后服务政策" href="/Info/IncludeHelpInfo.do?cid=50119" target="_blank" rel="nofollow">售后服务政策</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买网发票制度" href="/Info/IncludeHelpInfo.do?cid=334416" target="_blank" rel="nofollow">我买网发票制度</a></li></ul></li><li class="mode"><h3><span class="icon icon2"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="付款方式" href="/Info/IncludeHelpInfo-cid=50109.htm" target="_blank" rel="nofollow">付款方式</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="支付方式" href="/Info/InfoDetail-id=60008.htm" target="_blank" rel="nofollow">支付方式</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="支付常见问题" href="/Info/InfoDetail-id=60009.htm" target="_blank" rel="nofollow">支付常见问题</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="激活礼品卡" href="/Info/IncludeHelpInfo.do?cid=54013" target="_blank" rel="nofollow">激活礼品卡</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买卡" href="/Info/IncludeHelpInfo.do?cid=58402" target="_blank" rel="nofollow">我买卡</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="电子礼品卡说明及使用规则" href="/Info/IncludeHelpInfo.do?cid=358815" target="_blank" rel="nofollow">电子礼品卡说明及使用</a></li></ul></li><li class="mode"><h3><span class="icon icon3"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="配送信息" href="/Info/IncludeHelpInfo-cid=50110.htm" target="_blank" rel="nofollow">配送信息</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="配送运费信息" href="http://www.womai.com/Info/AboutUsDetail-id=56411.htm" target="_blank" rel="nofollow">配送运费信息</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="生鲜速配运费标准" href="http://www.womai.com/Info/AboutUsDetail-id=10722649.htm" target="_blank" rel="nofollow">生鲜速配运费标准</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="订单处理时间" href="/Info/InfoDetail-id=59806.htm" target="_blank" rel="nofollow">订单处理时间</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="验货与拒收政策" href="/Info/IncludeHelpInfo.do?cid=56900" target="_blank" rel="nofollow">验货与拒收政策</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="用券订单结算说明" href="/Info/IncludeHelpInfo.do?cid=204440" target="_blank" rel="nofollow">用券订单结算说明</a></li></ul></li><li class="mode"><h3><span class="icon icon4"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买提示" href="/Info/IncludeHelpInfo-cid=54022.htm" target="_blank" rel="nofollow">我买提示</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="找回密码" href="/Info/InfoDetail-id=60010.htm" target="_blank" rel="nofollow">找回密码</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="联系我们" href="/Info/InfoDetail-id=59807.htm" target="_blank" rel="nofollow">联系我们</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="常见热点问题" href="/Info/IncludeHelpInfo.do?cid=54023" target="_blank" rel="nofollow">常见热点问题</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="关于跨境购" href="/Info/InfoDetail-id=10507630.htm" target="_blank" rel="nofollow">关于跨境购</a></li></ul></li></ul><div class="ervma clearfix"><dl class="fl"><dt>中粮我买网APP</dt><dd><img class="lazyload" src="https://pic2.womai.com/upload/backend/2016/04/19/10/1461033750780.jpg" /></dd></dl><dl class="fl"><dt>中粮我买网微信</dt><dd><img class="lazyload" src="https://pic2.womai.com/upload/backend/2016/04/13/15/1460533777294.jpg" /></dd></dl></div></div><div class="clear"></div><div class="about_wrap">
+            <div class="about width">
+                <div class="links"><a href="https://www.womai.com/Info/newAboutUsInfo.do" target="_blank">关于我们</a><span>|</span><a href="http://www.womai.com/Info/AboutUsDetail-id=88801.htm" target="_blank">免责条款</a><span>|</span><a href="http://www.cofco.com/cn/index.html" target="_blank">中粮集团</a><span>|</span><a href="https://passport.womai.com/register/Protocol.do?mid=0" target="_blank">服务协议</a><span>|</span><a href="https://passport.womai.com/register/Privacy.do?mid=0" target="_blank">隐私协议</a><span>|</span><a href="https://www.womai.com/Info/FriendLink.do" target="_blank">友情链接</a><span>|</span><a href="http://www.womai.com/hot/" target="_blank">搜索热词</a><span>|</span><a href="https://www.womai.com/Info/InfoDetail.do?id=59807" target="_blank">客服电话：400-005-5678</a><span>|</span><span class="tuanmobile">企业采购热线：4008-117-588</span></div><div class="footer-2016 clearfix">
+                    <div class="pic fl"><a href="/index-31000-0.htm" target="_blank"><img class="lazyload" src="https://pic1.womai.com/upload/backend/2020/08/13/15/1597303360752.png" /></a></div><div class="copyright fl">
+                        <div>Copyright&#169;2009-2020  womai.com.hk All Rights Reserved 中粮海优（北京）有限公司版权所有</div><div>中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室</div><div class="beian">
+                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102000458">
+                                <i></i>
+                                <p>京公网安备 11010102000458号</p>
+                            </a>
+                            <p>&nbsp;&nbsp;<a target="_blank" href="https://beian.miit.gov.cn">京ICP备13003995号-1</a>&nbsp;&nbsp;</p>
+                        </div><div><a target="_blank" href="https://www.womai.com/upload/2019/7/1/20190701043116206.jpg?size=429291">营业执照（统一社会信用代码）91110000055590239L</a>&nbsp;&nbsp;食品经营许可证：JY11105020028185</div>
+                    </div>
+                </div><div class="Integrity width">
+                    <a id='___szfw_logo___' href='https://credit.szfw.org/CX20161213030617110338.html' target='_blank'><i class="cert"></i></a>
+                    <script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+                </div>
+            </div>
+        </div>
+    </div><div class="wm-toolbar">
+        <div class="toolbar-left">
+
+
+            <div class="wm-toolbar-top"><div class="wm-toolbar-tab wm-trigger wm-toolbar-hd cart"><em></em>购物车<span class="suspendcart_totalamount"></span><input id="suspendcart_items_amount" name="smallcart_items_amount" type="hidden" value="init" data-count="0"></div></div><div class="wm-toolbar-footer">
+                <ul>
+                    <li class="wm-toolbar-tab wm-trigger" id="suspendcollect"><span style="overflow: hidden; height: 34px;">我的收藏</span><em class="collect"></em></li>
+                    <li class="wm-toolbar-tab"><a href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.7561930007756112" target="_blank"><span>账户中心</span><em class="accoun"></em></a></li>
+                    <li class="wm-toolbar-tab"><a href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.7561930007756112&url=/Member/newwomaicard.do?mid=0&tt=0.7561930007756112" target="_blank"><span>在线充值</span><em class="recharge"></em></a></li>
+                    <li class="wm-toolbar-tab qr-img">
+                        <span>
+                            <a target='_blank'><img data-order="100" src='https://pic2.womai.com/upload/backend/2016/04/16/23/1460821684796.jpg' width='0' height='0' alt='手机二维码图片' border='0' /></a>
+                        </span><em class="qr"></em>
+                    </li>
+                    <li class="wm-toolbar-tab"><a href=""><span>顶部</span><em class="go-top"></em></a></li>
+                </ul>
+            </div>
+
+        </div><div class="pop-up">
+
+
+            <div class="pop-layer wm-cart" id="suspendcart"><h3 class="pop-title">我的购物车<em></em></h3><div class="scroll-box" id="suspendcart_cont" data-visible="0"></div></div><div class="pop-layer wm-collect"><h3 class="pop-title">我的收藏<em></em></h3><div class="wm-c-box" id="loadfavorlist"></div></div>
+
+        </div>
+    </div><div class="list_buy_pop top86" id="addToCartDiv" style="display:none;"><div class="buy_pop" id="addtocart_box" style="display: block;"><div id="showIncludeCart"></div><div class="buy_pop_m" id="buyThisStillBuy_before">加载中，请稍后...</div><div style="display:none;" id="buyThisStillBuy"><div class="buy_pop_m">购买过该商品的人还购买了</div><div class="buy_pop_b"><div class="pop_prev"></div><div class="pop_prev_noclick"></div><div class="list_scroll"><div class="list" id="buyThisStillBuy_list" data-first="y"></div></div><div class="pop_next"></div><div class="pop_next_noclick"></div></div></div></div></div><!--悬浮楼层部分--><div class="width"><div class="float-nav"><ul><li><a href="javascript:void(0)"><b>一国一馆</b></a></li><li><a href="javascript:void(0)"><b>健康厨房</b></a></li><li><a href="javascript:void(0)"><b>健康休闲</b></a></li></ul></div></div>
+    <div class="layoutBg"></div>
+    @*<script type="text/javascript" src="https://static.womai.com/zhongliang/city/index/js/cart.js?t=20160322"></script>
+        <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/js/addtocartmessage.js"></script>
+        <script type="text/javascript" src="https://static.womai.com/zhongliang/js/addToCart.js"></script>
+        <script type="text/javascript" src="https://static.womai.com/zhongliang/js/rwcookie.js"></script>
+        <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/city/index/js/recommend_all.js"></script>
+        <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/city/index/js/indexManagement.js"></script>
+        <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/templets/green2012/js/recommend_searchlist_new.js"></script>
+        <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/templets/green2012/js/recommend_notice_new.js"></script>*@
+</body>
+@*<body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Rs.LPY</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - Rs.LPY - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </body>*@
+</html>

@@ -295,7 +295,7 @@ namespace Nop.Services.Installation
             {
                 new Store
                 {
-                    Name = "Your store name",
+                    Name = "Rince King",
                     Url = storeUrl,
                     SslEnabled = _webHelper.IsCurrentConnectionSecured(),
                     Hosts = "yourstore.com,www.yourstore.com",
@@ -2224,9 +2224,9 @@ namespace Nop.Services.Installation
             {
                 new EmailAccount
                 {
-                    Email = "test@mail.com",
-                    DisplayName = "Store name",
-                    Host = "smtp.mail.com",
+                    Email = "527883283@qq.com",
+                    DisplayName = "Rince King",
+                    Host = "qq.mail.com",
                     Port = 25,
                     Username = "123",
                     Password = "123",

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/base.css",
+    "inputFile": "wwwroot/css/base.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/common.css",
+    "inputFile": "wwwroot/css/common.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/index.css",
+    "inputFile": "wwwroot/css/index.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/cart.css",
+    "inputFile": "wwwroot/css/cart.scss"
+  }
+]
