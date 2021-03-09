@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Keywords" content="@config.KeyWords" />
     <meta name="Description" content="@config.Descriptions" />
-    <title>@ViewData["Title"] - @config.Title </title>
+    <title>@config.Title </title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />*@
     <link rel="stylesheet" href="~/css/base.min.css" />
@@ -35,12 +35,41 @@
         <script type="text/javascript">includetop();</script>*@
     <div class="site_nav">
         <div class="nav width">
-            <ul class="nav_l">
+            @* 当前城市 *@
+            @*<ul class="nav_l">
                 <li id="siteinfo" data-showsite="" class="png site"></li>
+            </ul>*@
+            <ul class="nav_l" id="top_login_span" stle="clear:both;">
+                <li class="welcome">hi，欢迎来 @config.Title !</li>
+                <li class="t_item">@Html.ActionLink("登录", "Login", "Home")</li>
+                @if (!config.IsCloseReg)
+                {
+            <li class="t_item">@Html.ActionLink("注册", "Register", "Home")</li>
+                }
+
             </ul>
-            <ul class="nav_l" id="top_login_span" stle="clear:both;"></ul>
             <ul class="nav_r">
-                <li class="t_item mycount" id="myaccount" data-first="yes"><p><a name="_gatrack_event_myaccount" data-ga="site_nav" data-gatext="我的账户" href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.8582602360878059" id="t_item_mycount" rel="nofollow" target="_blank"><span class="text">我的账户<i class="png"></i></span></a></p><div class="mycount_cont loadding" id="myaccount_cont"></div></li>
+                <li class="t_item mycount " id="myaccount" data-first="yes">
+                    <p>
+                        <a href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.8582602360878059" target="_blank">
+                            <span class="text">我的账户<i class="png"></i></span>
+                        </a>
+                    </p>
+                    @*<div class="mycount_cont loadding" id="myaccount_cont"></div>*@
+                    <div class="mycount_cont" id="myaccount_cont">
+                        <p class="login"><span>您还没有登录！</span>@Html.ActionLink("登录","Login","Home")</p>
+                        <ul class="item">
+                            @*<li class="nopay"><a href="javascript:;">待付款订单 </a><i class="nopaypng" style="display: block;"></i></li>
+        <li class="insmsg"><a href="javascript:;">我的消息 </a><i class="tmsgpng" id="topmsgpng" style="display: none;"></i></li>*@
+                            @{
+                                for (int i = 0; i <= ConstData.AccountFun.GetLength(0)-1; i++)
+                                {
+                                    <li>@Html.ActionLink(ConstData.AccountFun[i, 1], ConstData.AccountFun[i, 0], "Members")</li>
+                                }
+                             }
+                        </ul>
+                    </div>
+                </li>
                 <li class="cart t_item"><a name="_gatrack_event_shoppingcart" data-ga="site_nav" data-gatext="购物车" onclick="gotoCart('cartlink');" href="/Cart/ShowCart.do?amp;tt=0.7239524504448682" class="cartlink_curr" target="_blank"> 购物车<b class="smallcart_totalamount"></b>件 </a></li>
                 <li class="t_item line">|</li>
                 <li class="t_item mycount"><p><a href="javascript:void(0);"><span class="text">客户服务<i class="png"></i></span></a></p><div class="mycount_cont width75"><ul class="item"><li class="nopay"><a target="_blank" name="_gatrack_event_help" data-ga="site_nav" data-gatext="帮助中心" href="http://help.womai.com" rel="nofollow">帮助中心</a></li><li><a target="_blank" name="_gatrack_event_newguide" data-ga="site_nav" data-gatext="新手上路" href="https://www.womai.com/Info/IncludeHelpInfo-cid=50111.htm" rel="nofollow">新手上路</a></li></ul></div></li>
@@ -53,12 +82,8 @@
                     <a target="_blank" rel="nofollow" href="https://www.womai.com/sale/2012/icbclika/"><span class="icbcexchange"></span></a>
 
                     <a target="_blank" rel="nofollow" href="https://www.womai.com/sale/2017/zgyd1711/"><span class="zhongxinexchange_hb"></span></a>
-
-
-
                 </li>
             </ul>
-            @*<script type="text/javascript">initMyAccountInfo();</script>*@
         </div>
     </div>
     <div class="clear"></div>
@@ -66,7 +91,7 @@
         <div class="width">
             <div class="logo"><a href="/index-31000-0.htm" target="_blank" name="_gatrack_event_logo" data-ga="header_logo" data-gatext="logo"><img src="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" original="https://pic3.womai.com/upload/backend/2020/08/13/15/1597302484754.png" alt="" /></a></div>
             <div class="logo_adv fl" id="_gatrack_adv_hearder_left" data-ga="header_adv_left"></div>
-            <div id="searchtop"><form onsubmit="return checkTopSearchForm()" id="searchform" name="searchform" method="get" style="margin: 0px" action="/ProductList.do?mid=0"><input type="hidden" id="SortCid2" name="Cid" value="606"><input type="hidden" id="rypId" name="rypId" value="608"><input type="hidden" id="zhId" name="zhId" value="605"><input type="hidden" name="mid" value="0" /> <input type="hidden" id="thKeywords" name="Keywords" /><input type="hidden" name="searchlist" value="1" /><input type="hidden" id="topmainColumnId" name="mainColumnId" value="-1" /><input type="hidden" id="isKeyCommendClick" name="isKeyCommendClick" value="0" /><input type="hidden" id="oldSearchKeyword" name="oldSearchKeyword" /><input type="hidden" id="searchKeywordPosition" name="searchKeywordPosition" /><input type="hidden" id="topmainColumnIdtitle" name="mainColumnIdtitle" /><div class="search_wrap"><div class="search_c"><div class="form fl" id="inputDiv"><input id="topKeywords" name="topKeywords" type="text" value="进口零食" isSearch="y" data-write=n data-defvalue="进口零食" data-URL="https://www.womai.com/Sort-31000-66110.htm"></div><div class="btn fr" name="_gatrack_event_search" data-ga="header_search" data-gatext="搜索"><button type="submit">搜索</button></div></div><div class="search_r"><a name="_gatrack_event_combiserach" data-ga="header_search" data-gatext="高级搜索" href="/Search.do?mid=0">高级<br>搜索</a></div><div class="search_b"><span class="hot"></span><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="礼盒" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C0%F1%BA%D0,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C0%F1%BA%D0" target="_blank">礼盒</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="粮油" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C1%B8%D3%CD,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C1%B8%D3%CD" target="_blank">粮油</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="大米" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%B4%F3%C3%D7,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%B4%F3%C3%D7" target="_blank">大米</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="牛奶" href="/ProductList.do?mid=0&Cid=606&rypId=608&zhId=605&isKeyCommendClick=1&Keywords=%C5%A3%C4%CC,title,mer_title,mer_title_,brand,cloumnName,keyword,keywords,articleRuleTitle,activeName,ProductFeatures&topKeywords=%C5%A3%C4%CC" target="_blank">牛奶</a></div></div></form></div>
+            <div id="searchtop"><form onsubmit="return checkTopSearchForm()" id="searchform" name="searchform" method="get" style="margin: 0px" action="/ProductList.do?mid=0"><input type="hidden" id="SortCid2" name="Cid" value="606"><input type="hidden" id="rypId" name="rypId" value="608"><input type="hidden" id="zhId" name="zhId" value="605"><input type="hidden" name="mid" value="0" /> <input type="hidden" id="thKeywords" name="Keywords" /><input type="hidden" name="searchlist" value="1" /><input type="hidden" id="topmainColumnId" name="mainColumnId" value="-1" /><input type="hidden" id="isKeyCommendClick" name="isKeyCommendClick" value="0" /><input type="hidden" id="oldSearchKeyword" name="oldSearchKeyword" /><input type="hidden" id="searchKeywordPosition" name="searchKeywordPosition" /><input type="hidden" id="topmainColumnIdtitle" name="mainColumnIdtitle" /><div class="search_wrap"><div class="search_c"><div class="form fl" id="inputDiv"><input id="topKeywords" name="topKeywords" type="text" value="进口零食" isSearch="y" data-write=n data-defvalue="进口零食" data-URL="https://www.womai.com/Sort-31000-66110.htm"></div><div class="btn fr" name="_gatrack_event_search" data-ga="header_search" data-gatext="搜索"><button type="submit">搜索</button></div></div><div class="search_r"><a name="_gatrack_event_combiserach" data-ga="header_search" data-gatext="高级搜索" href="/Search.do?mid=0">高级<br>搜索</a></div><div class="search_b"><span class="hot"></span><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="礼盒" href="/ProductList.do?" target="_blank">礼盒</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="粮油" href="/ProductList.do?" target="_blank">粮油</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="大米" href="/ProductList.do?" target="_blank">大米</a><a class="grey" name="_gatrack_event_keyword" data-ga="header_search" data-gatext="牛奶" href="/ProductList.do?" target="_blank">牛奶</a></div></div></form></div>
             <div class="app" id="_gatrack_adv_hearder_right" data-ga="header_adv_right">
                 <a data-ga="header_right" id="_gatrack_adv_header_adv_right" href=" //www.womai.com/sale/2016/shouji/index.html#page1" target='_blank'><img data-order="1" src='https://pic2.womai.com/upload/backend/2017/04/25/14/1493100962866.jpg' width='160' height='80' alt='手机' border='0' /></a>
             </div>
@@ -95,11 +120,10 @@
                 </div>
             </div>
         </div>
-    </div><div class="wm-toolbar">
+    </div>
+    <div class="wm-toolbar">
         <div class="toolbar-left">
-
-
-            <div class="wm-toolbar-top"><div class="wm-toolbar-tab wm-trigger wm-toolbar-hd cart"><em></em>购物车<span class="suspendcart_totalamount"></span><input id="suspendcart_items_amount" name="smallcart_items_amount" type="hidden" value="init" data-count="0"></div></div><div class="wm-toolbar-footer">
+            <div class="wm-toolbar-top"><div class="wm-toolbar-tab wm-trigger wm-toolbar-hd cart"><em></em>购物车<span class="suspendcart_totalamount">110</span><input id="suspendcart_items_amount" name="smallcart_items_amount" type="hidden" value="init" data-count="0"></div></div><div class="wm-toolbar-footer">
                 <ul>
                     <li class="wm-toolbar-tab wm-trigger" id="suspendcollect"><span style="overflow: hidden; height: 34px;">我的收藏</span><em class="collect"></em></li>
                     <li class="wm-toolbar-tab"><a href="https://www.womai.com/Member/index.jsp?mid=0&tt=0.7561930007756112" target="_blank"><span>账户中心</span><em class="accoun"></em></a></li>
@@ -119,7 +143,8 @@
             <div class="pop-layer wm-cart" id="suspendcart"><h3 class="pop-title">我的购物车<em></em></h3><div class="scroll-box" id="suspendcart_cont" data-visible="0"></div></div><div class="pop-layer wm-collect"><h3 class="pop-title">我的收藏<em></em></h3><div class="wm-c-box" id="loadfavorlist"></div></div>
 
         </div>
-    </div><div class="list_buy_pop top86" id="addToCartDiv" style="display:none;"><div class="buy_pop" id="addtocart_box" style="display: block;"><div id="showIncludeCart"></div><div class="buy_pop_m" id="buyThisStillBuy_before">加载中，请稍后...</div><div style="display:none;" id="buyThisStillBuy"><div class="buy_pop_m">购买过该商品的人还购买了</div><div class="buy_pop_b"><div class="pop_prev"></div><div class="pop_prev_noclick"></div><div class="list_scroll"><div class="list" id="buyThisStillBuy_list" data-first="y"></div></div><div class="pop_next"></div><div class="pop_next_noclick"></div></div></div></div></div><!--悬浮楼层部分--><div class="width"><div class="float-nav"><ul><li><a href="javascript:void(0)"><b>一国一馆</b></a></li><li><a href="javascript:void(0)"><b>健康厨房</b></a></li><li><a href="javascript:void(0)"><b>健康休闲</b></a></li></ul></div></div>
+    </div>
+    <div class="list_buy_pop top86" id="addToCartDiv" style="display:none;"><div class="buy_pop" id="addtocart_box" style="display: block;"><div id="showIncludeCart"></div><div class="buy_pop_m" id="buyThisStillBuy_before">加载中，请稍后...</div><div style="display:none;" id="buyThisStillBuy"><div class="buy_pop_m">购买过该商品的人还购买了</div><div class="buy_pop_b"><div class="pop_prev"></div><div class="pop_prev_noclick"></div><div class="list_scroll"><div class="list" id="buyThisStillBuy_list" data-first="y"></div></div><div class="pop_next"></div><div class="pop_next_noclick"></div></div></div></div></div><!--悬浮楼层部分--><div class="width"><div class="float-nav"><ul><li><a href="javascript:void(0)"><b>一国一馆</b></a></li><li><a href="javascript:void(0)"><b>健康厨房</b></a></li><li><a href="javascript:void(0)"><b>健康休闲</b></a></li></ul></div></div>
     <div class="layoutBg"></div>
     @*<script type="text/javascript" src="https://static.womai.com/zhongliang/city/index/js/cart.js?t=20160322"></script>
         <script type="text/javascript" language="javascript" src="https://static.womai.com/zhongliang/js/addtocartmessage.js"></script>

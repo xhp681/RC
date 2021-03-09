@@ -22,11 +22,30 @@ namespace Rs.LPY.Controllers
         {
             return View();
         }
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Login()
+        {
+            return View();
+        }
+        /// <summary>
+        /// 注册
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Register()
+        {
+            return View();
+        }
+        
+
 
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

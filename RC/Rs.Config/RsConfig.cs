@@ -14,10 +14,15 @@ namespace Rs.Config
     public class RsConfig: BaseConfig
     {
         [JsonPropertyName("title")]
-        public string Title { get; set; }
+        public string Title { get; set; } = "鹿璞生态城";
         [JsonPropertyName("keyword")]
-        public string KeyWords { get; set; }
+        public string KeyWords { get; set; } = string.Empty;
         [JsonPropertyName("description")]
-        public string Descriptions { get; set; }
+        public string Descriptions { get; set; } = string.Empty;
+        /// <summary>
+        /// 是否关闭注册功能
+        /// </summary>
+        [JsonPropertyName("iscloseregflag")]
+        public bool IsCloseReg { get; set; } = false;
     }
 }

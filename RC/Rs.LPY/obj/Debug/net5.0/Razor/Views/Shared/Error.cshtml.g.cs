@@ -28,13 +28,20 @@ using Rs.LPY.Models;
 #nullable disable
 #nullable restore
 #line 3 "D:\RC\RC\Rs.LPY\Views\_ViewImports.cshtml"
+using Rs.LPY.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\RC\RC\Rs.LPY\Views\_ViewImports.cshtml"
 using Rs.Config;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cddbafe19b7685e16607171f0e6c20c9d869f91c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3decf6a3839129446becf65762b7c2b669df16bf", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

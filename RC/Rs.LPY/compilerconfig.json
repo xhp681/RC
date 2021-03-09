@@ -1,18 +1,10 @@
 ﻿[
   {
-    "outputFile": "wwwroot/css/base.css",
-    "inputFile": "wwwroot/css/base.scss"
+    "outputFile": "wwwroot/css/admin/common.css",
+    "inputFile": "wwwroot/css/admin/common.scss"
   },
   {
-    "outputFile": "wwwroot/css/common.css",
-    "inputFile": "wwwroot/css/common.scss"
-  },
-  {
-    "outputFile": "wwwroot/css/index.css",
-    "inputFile": "wwwroot/css/index.scss"
-  },
-  {
-    "outputFile": "wwwroot/css/cart.css",
-    "inputFile": "wwwroot/css/cart.scss"
+    "outputFile": "wwwroot/css/admin/login.css",
+    "inputFile": "wwwroot/css/admin/login.scss"
   }
 ]

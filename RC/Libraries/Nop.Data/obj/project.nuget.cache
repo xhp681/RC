@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UyZ227z5zg3LT/dgh8cp+tG+r99kx7nxmu5/6gtzSslFbLC0oopuYWjbO/NnxZFBRJrOXCyDk4gNJ/L/KgGPZg==",
+  "dgSpecHash": "m+TAHrfjnLxN+h+cGfIB4owbz27xtkCq8guCfjMbGDNbj+Pf3CnjakfTJqQlNvcDcU/IBAGws68Gd4WUqwHObw==",
   "success": true,
   "projectFilePath": "D:\\RC\\RC\\Libraries\\Nop.Data\\Nop.Data.csproj",
   "expectedPackageFiles": [
@@ -135,7 +135,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\runtime.native.system.io.compression\\4.3.0\\runtime.native.system.io.compression.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.io.compression\\4.3.0\\runtime.native.system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.net.http\\4.3.0\\runtime.native.system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.security.cryptography.apple\\4.3.0\\runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

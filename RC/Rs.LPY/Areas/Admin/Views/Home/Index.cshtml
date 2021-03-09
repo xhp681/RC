@@ -1,0 +1,44 @@
+﻿@using Rs.Config;
+@using Rs.LPY.Areas.Admin.Models;
+@model LoginModel
+@{
+    var config = ConfigHelper.InitRsConfig();
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@config.Title- 后台管理系统</title>
+    <link href="~/css/admin/common.min.css" rel="stylesheet" />
+    <link href="~/css/admin/login.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">
+        <div class="msg-wrap">
+            <div class="msg-error" style="display:none;"></div>
+        </div>
+        <form asp-action="Index" asp-controller="Home" asp-area="Admin" class="form" method="post">
+            <div class="item">
+                <span class="u_logo"></span>
+                <input asp-for="UserName" class="itxt" type="text" placeholder="手机号/邮箱/用户名" autocomplete="off" maxlength="25" />
+            </div>
+            <div class="item">
+            <span class="p_logo"></span>
+            <input asp-for="PassWord" class="itxt" type="password" placeholder="密码 (6~32 个字符)" autocomplete="off" maxlength="16" />
+        </div>
+            <div class="item">
+                <div class="login-wrap">
+                    <div class="safe fl">
+                        <input name="chkRememberMe" type="checkbox" class="checkbox" checked="checked" value="on" />
+                        <span>记住我</span>
+                    </div>
+                    <div class="login-btn fr "><input type="submit" class="btn-img loginsumbit" value="登录" /></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
